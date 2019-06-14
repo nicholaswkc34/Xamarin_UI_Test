@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/ -->
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual js" lang="en-us" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="true" data-target="docs" x-ms-format-detection="none"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/51-6d3a1e"><link rel="stylesheet" href="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/override.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Xamarin.UITest - Visual Studio App Center">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/">
+		<meta property="og:description" content="Key features of App Center Test">
+		<meta property="og:image" content="https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png">
+		<meta property="og:image:alt" content="Microsoft Logo">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@docsmsft">
+
+		<meta name="audience" content="developer">
+<meta name="manager" content="jowargo">
+<meta name="breadcrumb_path" content="../../_breadcrumb/toc.json">
+<meta name="ms.topic" content="article">
+<meta name="ms.service" content="vs-appcenter">
+<meta name="uhfHeaderId" content="MSDocsHeader-AppCenter">
+<meta name="ms.custom" content="test">
+<meta name="ms.assetid" content="4350040e-0217-4482-9412-e24ef6ffc9b2">
+<meta name="author" content="glennwester">
+<meta name="description" content="Key features of App Center Test">
+<meta name="ms.author" content="glwest">
+<meta name="keywords" content="uitest test cloud">
+<meta name="ms.date" content="05/13/2019">
+<meta name="ms.reviewer" content="crdun">
+<meta name="search.ms_sitename" content="Docs">
+<meta name="search.ms_docsetname" content="vs-appcenter">
+<meta name="locale" content="en-us">
+<meta name="site_name" content="Docs">
+<meta name="search.ms_product" content="MSDN">
+<meta name="depot_name" content="MSDN.vs-appcenter">
+<meta name="updated_at" content="2019-05-16 11:00 PM">
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/appcenter-docs-pr/blob/3ce1f0f9aee9bc0b25a93aaa2d335cf55b73ce7e/docs/test-cloud/uitest/index.md">
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/appcenter-docs-pr/blob/live/docs/test-cloud/uitest/index.md">
+<meta name="document_id" content="8a0474be-6e14-b8e6-b6cf-934a04f0e509">
+<meta name="document_version_independent_id" content="4a79fc1d-8dca-1c17-718f-c30fda180f05">
+<meta name="page_type" content="conceptual">
+<meta name="toc_rel" content="../../TOC.json">
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/en-us/MSDN.vs-appcenter/{branchName}{pdfName}">
+<meta name="word_count" content="3026">
+
+	<meta name="scope" content="App Center">
+<link href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/" rel="canonical">
+	<title>Xamarin.UITest - Visual Studio App Center | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/db0eec0f.site-ltr.css">
+
+	<link rel="stylesheet" href="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/f1e7d9d9.conceptual.css">
+
+
+	<script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/analytics.js.download"></script><script>
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			azureHeaderLocale: 'en-us',
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+
+			},
+			hasComments: true,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/appcenter-docs',
+			feedbackProductUrl: 'https://intercom.help/appcenter/getting-started/getting-help-with-app-center',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/appcenter-docs/blob/live/docs/test-cloud/uitest/index.md',
+		},
+		functions:{},
+		settings:{
+			extendBreadcrumb: true,
+			enableUHFPPE: false
+		}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="https://static.docs.com/ui/third-party/bluebird/3.5.0/bluebird.min.js" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof fetch !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/fetch/2.0.3/fetch.min.js" integrity="sha384-H3LQq82b6Mm80GYRHtRSlTwO9DoXctmYCVEYk9M8mp97lRzs6DuSrHVUg3SBP9w0" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof HTMLTemplateElement === 'undefined') {
+		document.write('<script src="https://static.docs.com/ui/third-party/template/1.4.0/template.min.js" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof URL !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/url/0.5.7/url.min.js" integrity="sha384-vn7xBMtpSTfzaTRWxj0kVq0UcsbBrTOgZ/M1ISHqe1V358elYva+lfiEC+T8jLPc" crossorigin="anonymous"><\/script>');
+	}
+	</script>
+
+	<script src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/jquery-3.3.1.min.js.download" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/412eea1a.index-docs.js.download"></script><style></style><script src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/jsll-4.js.download" async="" defer=""></script>
+
+<script src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/18-d72213" defer=""></script><style>
+			.c-uhfh input[type="search"],
+			.c-uhfh.c-sgl-stck .c-uhfh-actions .c-search input[type="search"] {
+				padding-left: 112px !important;
+			}</style><script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/t.js.download"></script><script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/t.js(1).download"></script><script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/t.js(2).download"></script><script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/t.js(3).download"></script><script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/t.js(4).download"></script><script async="" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/t.js(5).download"></script><script async="" src="https://web.vortex.data.microsoft.com/collect/v1/t.js?ver=%272.1%27&amp;name=%27Ms.Webi.ContentUpdate%27&amp;time=%272019-06-14T08%3A56%3A13.304Z%27&amp;os=%27Windows%27&amp;appId=%27JS%3ADocs%27&amp;-ver=%271.0%27&amp;-impressionGuid=%279ab6c54b-92e7-4464-8eb0-b45d0b5012b3%27&amp;-pageName=%278a0474be-6e14-b8e6-b6cf-934a04f0e509%27&amp;-uri=%27https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F%27&amp;-market=%27en-us%27&amp;-pageTags=%27%7B%22aud%22%3A%22developer%22%2C%22manager%22%3A%22jowargo%22%2C%22pgtop%22%3A%22article%22%2C%22pgsrvcs%22%3A%22vs-appcenter%22%2C%22custom%22%3A%22test%22%2C%22asst%22%3A%224350040e-0217-4482-9412-e24ef6ffc9b2%22%2C%22author%22%3A%22glennwester%22%2C%22pgauth%22%3A%22glwest%22%2C%22date%22%3A%2205%2F13%2F2019%22%2C%22reviewer%22%3A%22crdun%22%2C%22depotname%22%3A%22MSDN.vs-appcenter%22%2C%22publishtime%22%3A%222019-05-16%2011%3A00%20PM%22%2C%22gitcommit%22%3A%22https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fappcenter-docs-pr%2Fblob%2F3ce1f0f9aee9bc0b25a93aaa2d335cf55b73ce7e%2Fdocs%2Ftest-cloud%2Fuitest%2Findex.md%22%2C%22giturl%22%3A%22https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fappcenter-docs-pr%2Fblob%2Flive%2Fdocs%2Ftest-cloud%2Fuitest%2Findex.md%22%2C%22document_version_independent_id%22%3A%224a79fc1d-8dca-1c17-718f-c30fda180f05%22%2C%22contentlocale%22%3A%22en-us%22%2C%22highContrast%22%3A%22false%22%2C%22metaTags%22%3A%7B%7D%7D%27&amp;-pageHeight=12961&amp;-vpHeight=539&amp;-vpWidth=1229&amp;-actionType=%27R%27&amp;-behavior=0&amp;-vScrollOffset=10352&amp;-hScrollOffset=0&amp;-contentVer=%272.0%27&amp;-content=%27%5B%5D%27&amp;*baseType=%27Ms.Content.ContentUpdate%27&amp;*title=%27Xamarin.UITest%20-%20Visual%20Studio%20App%20Center%20%7C%20Microsoft%20Docs%27&amp;*cookieEnabled=true&amp;*isJs=true&amp;*isDomComplete=false&amp;*isLoggedIn=false&amp;ext-javascript-ver=%271.1%27&amp;ext-javascript-libVer=%274.2.14%27&amp;ext-javascript-domain=%27docs.microsoft.com%27&amp;ext-javascript-msfpc=%27GUID%3Da2b9ebeb8edb4cbf9522839ddb725965%26HASH%3Da2b9%26LV%3D201905%26V%3D4%26LU%3D1557885306437%27&amp;ext-javascript-userConsent=false&amp;ext-user-localId=%27t%3A2ECD90494F1963FC32FA9D144B1960A3%27&amp;$mscomCookies=false"></script></head>
+
+<body lang="en-us" dir="ltr" class="js-focus-visible" style="">
+<div class="header-holder">
+		<div id="headerAreaHolder" data-bi-name="header">    <div id="headerArea" class="uhf" data-m="{&quot;cN&quot;:&quot;headerArea&quot;,&quot;cT&quot;:&quot;Area_coreuiArea&quot;,&quot;id&quot;:&quot;a1Body&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;Body&quot;}">
+                <div id="headerRegion" data-region-key="headerregion" data-m="{&quot;cN&quot;:&quot;headerRegion&quot;,&quot;cT&quot;:&quot;Region_coreui-region&quot;,&quot;id&quot;:&quot;r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;a1&quot;}">
+
+    <div id="headerUniversalHeader" data-m="{&quot;cN&quot;:&quot;headerUniversalHeader&quot;,&quot;cT&quot;:&quot;Module_coreui-universalheader&quot;,&quot;id&quot;:&quot;m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;r1a1&quot;}" data-module-id="Category|headerRegion|coreui-region|headerUniversalHeader|coreui-universalheader">
+        
+
+
+
+
+
+		<a id="uhfSkipToMain" class="m-skip-to-main" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#main" tabindex="0" style="z-index:3000002" data-m="{&quot;cN&quot;:&quot;Skip to content_nonnav&quot;,&quot;id&quot;:&quot;nn1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;m1r1a1&quot;}">Skip to main content</a>
+
+
+<header role="banner" class="c-uhfh context-uhf c-sgl-stck c-category-header f-transparent" itemscope="itemscope" data-header-footprint="/MSDocs/MSDocsHeader-AppCenter, fromService: True" data-magict="true" itemtype="http://schema.org/Organization">
+	<div class="js-global-head f-closed global-head-cont theme-light" data-m="{&quot;cN&quot;:&quot;Universal Header_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;m1r1a1&quot;}">
+		<div class="c-uhfh-gcontainer-st">
+			<button type="button" class="c-action-trigger c-glyph glyph-global-nav-button" aria-label="All Microsoft expand to see list of Microsoft products and services" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;Mobile menu button_nonnav&quot;,&quot;id&quot;:&quot;nn1c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2m1r1a1&quot;}"></button>
+			<button type="button" class="c-action-trigger c-glyph glyph-arrow-htmllegacy" aria-label="Close search" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;Close Search_nonnav&quot;,&quot;id&quot;:&quot;nn2c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c2m1r1a1&quot;}"></button>
+					<a id="uhfLogo" class="c-logo c-sgl-stk-uhfLogo" itemprop="url" href="https://www.microsoft.com/" aria-label="Microsoft" data-m="{&quot;cN&quot;:&quot;GlobalNav_Logo_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c2m1r1a1&quot;}">
+						<img alt="" itemprop="logo" itemscope="itemscope" class="c-image" src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/RE1Mu3b" role="presentation" aria-hidden="true">
+						<span role="presentation" aria-hidden="true">Microsoft</span>
+					</a>
+			<div class="f-mobile-title">
+				<button type="button" class="c-action-trigger c-glyph glyph-chevron-left" aria-label="See more menu options" data-m="{&quot;cN&quot;:&quot;Mobile back button_nonnav&quot;,&quot;id&quot;:&quot;nn4c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c2m1r1a1&quot;}"></button>
+				<span data-global-title="Microsoft home" class="js-mobile-title">Visual Studio App Center</span>
+				<button type="button" class="c-action-trigger c-glyph glyph-chevron-right" aria-label="See more menu options" data-m="{&quot;cN&quot;:&quot;Mobile forward button_nonnav&quot;,&quot;id&quot;:&quot;nn5c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c2m1r1a1&quot;}"></button>
+			</div>
+					<div class="c-show-pipe x-hidden-vp-mobile-st">
+						<a id="uhfCatLogo" class="c-logo c-cat-logo" href="https://docs.microsoft.com/appcenter" aria-label="Visual Studio App Center" itemprop="url" data-m="{&quot;cN&quot;:&quot;CatNav_Visual Studio App Center_nav&quot;,&quot;id&quot;:&quot;n6c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c2m1r1a1&quot;}">
+								<span>Visual Studio App Center</span>
+						</a>
+					</div>
+				<div class="cat-logo-button-cont x-hidden">
+						<button type="button" id="uhfCatLogoButton" class="c-cat-logo-button x-hidden" aria-expanded="false" aria-label="Visual Studio App Center" data-m="{&quot;cN&quot;:&quot;Visual Studio App Center_nonnav&quot;,&quot;id&quot;:&quot;nn7c2m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c2m1r1a1&quot;}">
+							Visual Studio App Center
+						</button>
+				</div>
+
+
+
+			        <nav id="uhf-g-nav" aria-label="Contextual menu" class="c-uhfh-gnav" data-m="{&quot;cN&quot;:&quot;Category nav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c2m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c2m1r1a1&quot;}">
+            <ul class="js-paddle-items">
+                    <li class="single-link js-nav-menu x-hidden-none-mobile-vp uhf-menu-item">
+                        <a class="c-uhf-nav-link" href="https://docs.microsoft.com/appcenter" data-m="{&quot;cN&quot;:&quot;CatNav_Home_nav&quot;,&quot;id&quot;:&quot;n1c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}"> Home </a>
+                    </li>
+                                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="c-shellmenu_0" class="c-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/build/" data-m="{&quot;cN&quot;:&quot;CatNav_C1_1-BuildCategoryMenu_nav&quot;,&quot;id&quot;:&quot;n2c8c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}">Build</a>
+                        </li>
+                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="c-shellmenu_1" class="c-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/" data-m="{&quot;cN&quot;:&quot;CatNav_C1_2-TestCategoryMenu_nav&quot;,&quot;id&quot;:&quot;n3c8c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}">Test</a>
+                        </li>
+                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="c-shellmenu_2" class="c-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/analytics/" data-m="{&quot;cN&quot;:&quot;CatNav_C1_3-AnalyticsCategoryMenu_nav&quot;,&quot;id&quot;:&quot;n4c8c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}">Analytics</a>
+                        </li>
+                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="c-shellmenu_3" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;CatNav_C1_4-SDKCategoryMenu_nonnav&quot;,&quot;id&quot;:&quot;nn5c8c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}" style="white-space:nowrap">SDK</button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;C1_4-SDKCategoryMenu_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c8c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_1-Android_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_4" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/android/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_1-Android_nav&quot;,&quot;id&quot;:&quot;n1c1c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c6c8c2m1r1a1&quot;}">Android</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_2-iOS_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c6c8c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_5" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/ios/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_2-iOS_nav&quot;,&quot;id&quot;:&quot;n1c2c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c6c8c2m1r1a1&quot;}">iOS</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_3-macOS_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c6c8c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_6" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/macos/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_3-macOS_nav&quot;,&quot;id&quot;:&quot;n1c3c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c6c8c2m1r1a1&quot;}">macOS</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_4-UWP_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c6c8c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_7" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/uwp/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_4-UWP_nav&quot;,&quot;id&quot;:&quot;n1c4c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c6c8c2m1r1a1&quot;}">UWP</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_5-Cordova_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c6c8c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_8" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/cordova/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_5-Cordova_nav&quot;,&quot;id&quot;:&quot;n1c5c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c6c8c2m1r1a1&quot;}">Cordova</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_6-ReactNative_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c6c8c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_9" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/react-native/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_6-ReactNative_nav&quot;,&quot;id&quot;:&quot;n1c6c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c6c8c2m1r1a1&quot;}">React Native</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;C2_7-Xamarin_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c6c8c2m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c6c8c2m1r1a1&quot;}">
+            <a id="c-shellmenu_10" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/xamarin/" data-m="{&quot;cN&quot;:&quot;CatNav_C2_7-Xamarin_nav&quot;,&quot;id&quot;:&quot;n1c7c6c8c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c6c8c2m1r1a1&quot;}">Xamarin</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="c-shellmenu_11" class="c-uhf-nav-link" href="https://docs.microsoft.com/en-us/appcenter/general/pricing/" data-m="{&quot;cN&quot;:&quot;CatNav_C1_5-PricingCategoryMenu_nav&quot;,&quot;id&quot;:&quot;n7c8c2m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}">Pricing</a>
+                        </li>
+
+
+                <li id="overflow-menu" class="overflow-menu x-hidden uhf-menu-item">
+                        <div class="c-uhf-menu js-nav-menu">
+        <button data-m="{&quot;pid&quot;:&quot;More&quot;,&quot;id&quot;:&quot;nn8c8c2m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}" type="button" aria-label="More" aria-expanded="false" style="white-space:nowrap">More</button>
+        <ul id="overflow-menu-list" aria-hidden="true" class="overflow-menu-list">
+        </ul>
+    </div>
+
+                </li>
+                                    <li class="single-link js-nav-menu" id="c-uhf-nav-cta">
+                        <a class="c-uhf-nav-link" href="https://appcenter.ms/login?utm_source=Nav_sign_up_button&amp;utm_medium=referral&amp;utm_campaign=appcenter_Nav_Sign_Up_Button" data-m="{&quot;cN&quot;:&quot;CatNav_cta_Free Account_nav&quot;,&quot;id&quot;:&quot;n9c8c2m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c8c2m1r1a1&quot;}">Free Account</a>
+                    </li>
+            </ul>
+            
+        </nav>
+
+
+			<div class="c-uhfh-actions" data-m="{&quot;cN&quot;:&quot;Header actions_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c2m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c2m1r1a1&quot;}">
+				<div class="wf-menu">        <nav id="uhf-c-nav" aria-label="All microsoft menu" data-m="{&quot;cN&quot;:&quot;GlobalNav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c2m1r1a1&quot;}">
+            <ul class="js-paddle-items">
+                <li>
+                    <div class="c-uhf-menu js-nav-menu">
+                        <button type="button" class="c-button-logo all-ms-nav" aria-label="All Microsoft expand to see list of Microsoft products and services" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_nonnav&quot;,&quot;id&quot;:&quot;nn1c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c9c2m1r1a1&quot;}" style="white-space: nowrap"> <span>All Microsoft</span></button>
+                        <ul class="f-multi-column f-multi-column-6" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;More_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c1c9c2m1r1a1&quot;}">
+                                    <li class="c-w0-contr">
+            <ul class="c-w0">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Office_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_12" class="js-subm-uhf-nav-link" href="https://products.office.com/en-us/home" data-m="{&quot;cN&quot;:&quot;W0Nav_Office_nav&quot;,&quot;id&quot;:&quot;n1c1c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c2c1c9c2m1r1a1&quot;}">Office</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Windows_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_13" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/windows/" data-m="{&quot;cN&quot;:&quot;W0Nav_Windows_nav&quot;,&quot;id&quot;:&quot;n1c2c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c2c1c9c2m1r1a1&quot;}">Windows</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Surface_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_14" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/surface" data-m="{&quot;cN&quot;:&quot;W0Nav_Surface_nav&quot;,&quot;id&quot;:&quot;n1c3c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c2c1c9c2m1r1a1&quot;}">Surface</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Xbox_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_15" class="js-subm-uhf-nav-link" href="https://www.xbox.com/" data-m="{&quot;cN&quot;:&quot;W0Nav_Xbox_nav&quot;,&quot;id&quot;:&quot;n1c4c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c2c1c9c2m1r1a1&quot;}">Xbox</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Deals_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_16" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/b/sale?icid=gm_nav_L0_salepage" data-m="{&quot;cN&quot;:&quot;W0Nav_Deals_nav&quot;,&quot;id&quot;:&quot;n1c5c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c2c1c9c2m1r1a1&quot;}">Deals</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Support_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+            <a id="l1_support" class="js-subm-uhf-nav-link" href="https://support.microsoft.com/en-us" data-m="{&quot;cN&quot;:&quot;W0Nav_Support_nav&quot;,&quot;id&quot;:&quot;n1c6c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c2c1c9c2m1r1a1&quot;}">Support</a>
+            
+        </li>
+            </ul>
+        </li>
+
+        <li class="f-sub-menu js-nav-menu nested-menu" data-m="{&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+
+            <button type="button" role="presentation" f-multi-parent="true" aria-expanded="false" data-m="{&quot;id&quot;:&quot;nn1c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c2c1c9c2m1r1a1&quot;}">Software</button>
+            <ul aria-hidden="true" role="presentation">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Software_WindowsApps_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c7c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_20" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/windows/windows-10-apps" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Software_WindowsApps_nav&quot;,&quot;id&quot;:&quot;n1c2c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c7c2c1c9c2m1r1a1&quot;}">Windows apps</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Software_OneDrive_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c7c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_21" class="js-subm-uhf-nav-link" href="https://onedrive.live.com/about/en-us/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Software_OneDrive_nav&quot;,&quot;id&quot;:&quot;n1c3c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c7c2c1c9c2m1r1a1&quot;}">OneDrive</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Software_Outlook_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c7c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_22" class="js-subm-uhf-nav-link" href="https://outlook.live.com/owa/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Software_Outlook_nav&quot;,&quot;id&quot;:&quot;n1c4c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c7c2c1c9c2m1r1a1&quot;}">Outlook</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Software_Skype_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c7c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_23" class="js-subm-uhf-nav-link" href="https://www.skype.com/en/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Software_Skype_nav&quot;,&quot;id&quot;:&quot;n1c5c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c7c2c1c9c2m1r1a1&quot;}">Skype</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Software_OneNote_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c7c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_24" class="js-subm-uhf-nav-link" href="https://www.onenote.com/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Software_OneNote_nav&quot;,&quot;id&quot;:&quot;n1c6c7c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c7c2c1c9c2m1r1a1&quot;}">OneNote</a>
+            
+        </li>
+            </ul>
+            
+        </li>
+        <li class="f-sub-menu js-nav-menu nested-menu" data-m="{&quot;cN&quot;:&quot;PCsAndDevices_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+
+            <button type="button" role="presentation" f-multi-parent="true" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;GlobalNav_PCsAndDevices_nonnav&quot;,&quot;id&quot;:&quot;nn1c8c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c2c1c9c2m1r1a1&quot;}">PCs &amp; Devices  </button>
+            <ul aria-hidden="true" role="presentation">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_PCsAndDevices_PCsAndTablets_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c8c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c8c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_26" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/windows/devices" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_PCsAndDevices_PCsAndTablets_nav&quot;,&quot;id&quot;:&quot;n1c2c8c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c8c2c1c9c2m1r1a1&quot;}">PCs &amp; tablets</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_PCAndDevices_Accessories_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c8c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c8c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_27" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/accessories/en-us" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_PCAndDevices_Accessories_nav&quot;,&quot;id&quot;:&quot;n1c3c8c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c8c2c1c9c2m1r1a1&quot;}">Accessories</a>
+            
+        </li>
+            </ul>
+            
+        </li>
+        <li class="f-sub-menu js-nav-menu nested-menu" data-m="{&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+
+            <button type="button" role="presentation" f-multi-parent="true" aria-expanded="false" data-m="{&quot;id&quot;:&quot;nn1c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c2c1c9c2m1r1a1&quot;}">Entertainment</button>
+            <ul aria-hidden="true" role="presentation">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Products_DevicesAndXbox_XboxAndGames_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c9c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_29" class="js-subm-uhf-nav-link" href="https://www.xbox.com/en-us/games/xbox-one?xr=shellnav" data-m="{&quot;cN&quot;:&quot;GlobalNav_Products_DevicesAndXbox_XboxAndGames_nav&quot;,&quot;id&quot;:&quot;n1c2c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c9c2c1c9c2m1r1a1&quot;}">Xbox games</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Entertainment_PCGames_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c9c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_30" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/windows/windows-10-games" data-m="{&quot;cN&quot;:&quot;GlobalNav_Entertainment_PCGames_nav&quot;,&quot;id&quot;:&quot;n1c3c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c9c2c1c9c2m1r1a1&quot;}">PC games</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Entertainment_WindowsDigitalGames_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c9c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_31" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/games/windows?icid=TopNavWindowsGames" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Entertainment_WindowsDigitalGames_nav&quot;,&quot;id&quot;:&quot;n1c4c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c9c2c1c9c2m1r1a1&quot;}">Windows digital games</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Entertainment_MoviesAndTV_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c9c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_32" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/movies-and-tv?icid=TopNavMoviesAndTv" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Entertainment_MoviesAndTV_nav&quot;,&quot;id&quot;:&quot;n1c5c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c9c2c1c9c2m1r1a1&quot;}">Movies &amp; TV</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Entertainment_Books_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c9c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_33" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/books" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Entertainment_Books_nav&quot;,&quot;id&quot;:&quot;n1c6c9c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c9c2c1c9c2m1r1a1&quot;}">Books</a>
+            
+        </li>
+            </ul>
+            
+        </li>
+        <li class="f-sub-menu js-nav-menu nested-menu" data-m="{&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:10,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+
+            <button type="button" role="presentation" f-multi-parent="true" aria-expanded="false" data-m="{&quot;id&quot;:&quot;nn1c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">Business</button>
+            <ul aria-hidden="true" role="presentation">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Business_MicrosoftAzure_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_35" class="js-subm-uhf-nav-link" href="https://azure.microsoft.com/en-us/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Business_MicrosoftAzure_nav&quot;,&quot;id&quot;:&quot;n1c2c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c10c2c1c9c2m1r1a1&quot;}">Microsoft Azure</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Business_MicrosoftDynamics365_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_36" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/dynamics365/home" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Business_MicrosoftDynamics365_nav&quot;,&quot;id&quot;:&quot;n1c3c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c10c2c1c9c2m1r1a1&quot;}">Microsoft Dynamics 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Business_Microsoft365_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_37" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/microsoft-365/?omkt=en-US" data-m="{&quot;cN&quot;:&quot;GlobalNav_Business_Microsoft365_nav&quot;,&quot;id&quot;:&quot;n1c4c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c10c2c1c9c2m1r1a1&quot;}">Microsoft 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Business_Enterprise_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_38" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/enterprise" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Business_Enterprise_nav&quot;,&quot;id&quot;:&quot;n1c5c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c10c2c1c9c2m1r1a1&quot;}">Microsoft Industry</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Business_DataPlatform_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_39" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/sql-server/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Business_DataPlatform_nav&quot;,&quot;id&quot;:&quot;n1c6c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c10c2c1c9c2m1r1a1&quot;}">Data platform</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_MicrosoftAdvertising_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_40" class="js-subm-uhf-nav-link" href="https://go.microsoft.com/fwlink/?linkid=2026638" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_MicrosoftAdvertising_nav&quot;,&quot;id&quot;:&quot;n1c7c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c10c2c1c9c2m1r1a1&quot;}">Microsoft Advertising</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Business_Licensing_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c10c2c1c9c2m1r1a1&quot;}">
+            <a id="Licensing" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/licensing/default" data-m="{&quot;cN&quot;:&quot;GlobalNav_Business_Licensing_nav&quot;,&quot;id&quot;:&quot;n1c8c10c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c10c2c1c9c2m1r1a1&quot;}">Licensing</a>
+            
+        </li>
+            </ul>
+            
+        </li>
+        <li class="f-sub-menu js-nav-menu nested-menu" data-m="{&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:11,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+
+            <button type="button" role="presentation" f-multi-parent="true" aria-expanded="false" data-m="{&quot;id&quot;:&quot;nn1c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c11c2c1c9c2m1r1a1&quot;}">Developer &amp; IT  </button>
+            <ul aria-hidden="true" role="presentation">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_DeveloperAndIT_.Net_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c11c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_43" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/net/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_DeveloperAndIT_.Net_nav&quot;,&quot;id&quot;:&quot;n1c2c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c11c2c1c9c2m1r1a1&quot;}">.NET</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_DevelopersAndIT_VisualStudio_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c11c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_44" class="js-subm-uhf-nav-link" href="https://visualstudio.microsoft.com/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_DevelopersAndIT_VisualStudio_nav&quot;,&quot;id&quot;:&quot;n1c3c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c11c2c1c9c2m1r1a1&quot;}">Visual Studio</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_ProductsandServices_WindowsServer_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c11c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_45" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/cloud-platform/windows-server" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_ProductsandServices_WindowsServer_nav&quot;,&quot;id&quot;:&quot;n1c4c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c11c2c1c9c2m1r1a1&quot;}">Windows Server</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_DeveloperAndIT_WindowsDevCenter_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c11c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_46" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/windows" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_DeveloperAndIT_WindowsDevCenter_nav&quot;,&quot;id&quot;:&quot;n1c5c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c11c2c1c9c2m1r1a1&quot;}">Windows Dev Center</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_DeveloperAndIT_Docs.microsoft.com_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c11c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_47" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_DeveloperAndIT_Docs.microsoft.com_nav&quot;,&quot;id&quot;:&quot;n1c6c11c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c11c2c1c9c2m1r1a1&quot;}">Docs</a>
+            
+        </li>
+            </ul>
+            
+        </li>
+        <li class="f-sub-menu js-nav-menu nested-menu" data-m="{&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:12,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}">
+
+            <button type="button" role="presentation" f-multi-parent="true" aria-expanded="false" data-m="{&quot;id&quot;:&quot;nn1c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">Other</button>
+            <ul aria-hidden="true" role="presentation">
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Other_MicrosoftStore_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_49" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/b/home" data-m="{&quot;cN&quot;:&quot;GlobalNav_Other_MicrosoftStore_nav&quot;,&quot;id&quot;:&quot;n1c2c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c12c2c1c9c2m1r1a1&quot;}">Microsoft Store</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Other_Microsoft Rewards_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_50" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/rewards" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Other_Microsoft Rewards_nav&quot;,&quot;id&quot;:&quot;n1c3c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c12c2c1c9c2m1r1a1&quot;}">Microsoft Rewards </a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Products_SoftwareAndServices_FreeDownloadsAndSecurity_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_51" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/download/default.aspx" data-m="{&quot;cN&quot;:&quot;GlobalNav_Products_SoftwareAndServices_FreeDownloadsAndSecurity_nav&quot;,&quot;id&quot;:&quot;n1c4c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c12c2c1c9c2m1r1a1&quot;}">Free downloads &amp; security</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Products_ForStudentsAndEducators_Education_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_52" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/education?icid=CNavMSCOML0_Studentsandeducation" data-m="{&quot;cN&quot;:&quot;GlobalNav_Products_ForStudentsAndEducators_Education_nav&quot;,&quot;id&quot;:&quot;n1c5c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c12c2c1c9c2m1r1a1&quot;}">Education</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;More_Other_Store_Locations_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_53" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/locations/find-a-store?icid=TopNavStoreLocations" data-m="{&quot;cN&quot;:&quot;GlobalNav_More_Other_Store_Locations_nav&quot;,&quot;id&quot;:&quot;n1c6c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c12c2c1c9c2m1r1a1&quot;}">Store locations</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m="{&quot;cN&quot;:&quot;Store_More_GiftCards_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c12c2c1c9c2m1r1a1&quot;}">
+            <a id="shellmenu_54" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/store/b/gift-cards" data-m="{&quot;cN&quot;:&quot;GlobalNav_Store_More_GiftCards_nav&quot;,&quot;id&quot;:&quot;n1c7c12c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c12c2c1c9c2m1r1a1&quot;}">Gift cards</a>
+            
+        </li>
+            </ul>
+            
+        </li>
+                                                            <li class="f-multi-column-info">
+                                    <a data-m="{&quot;id&quot;:&quot;n13c2c1c9c2m1r1a1&quot;,&quot;sN&quot;:13,&quot;aN&quot;:&quot;c2c1c9c2m1r1a1&quot;}" href="https://www.microsoft.com/en-us/sitemap.aspx" aria-label="" class="c-glyph">View Sitemap</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+</div>
+		<form class="c-search" autocomplete="off" id="searchForm" name="searchForm" role="search" action="https://docs.microsoft.com/en-us/search/index" method="GET" title="Search" data-seautosuggest="{&quot;queryParams&quot;:{&quot;market&quot;:&quot;en-us&quot;,&quot;clientId&quot;:&quot;7F27B536-CF6B-4C65-8638-A0F8CBDFCA65&quot;,&quot;sources&quot;:&quot;Microsoft-Terms,Iris-Products,DCatAll-Products&quot;,&quot;filter&quot;:&quot;+ClientType:StoreWeb&quot;,&quot;counts&quot;:&quot;5,1,5&quot;},&quot;familyNames&quot;:{&quot;Apps&quot;:&quot;App&quot;,&quot;Books&quot;:&quot;Book&quot;,&quot;Bundles&quot;:&quot;Bundle&quot;,&quot;Devices&quot;:&quot;Device&quot;,&quot;Fees&quot;:&quot;Fee&quot;,&quot;Games&quot;:&quot;Game&quot;,&quot;MusicAlbums&quot;:&quot;Album&quot;,&quot;MusicTracks&quot;:&quot;Song&quot;,&quot;MusicVideos&quot;:&quot;Video&quot;,&quot;MusicArtists&quot;:&quot;Artist&quot;,&quot;OperatingSystem&quot;:&quot;Operating System&quot;,&quot;Software&quot;:&quot;Software&quot;,&quot;Movies&quot;:&quot;Movie&quot;,&quot;TV&quot;:&quot;TV&quot;,&quot;CSV&quot;:&quot;Gift Card&quot;,&quot;VideoActor&quot;:&quot;Actor&quot;}}" data-seautosuggestapi="https://www.microsoft.com/services/api/v3/suggest" data-m="{&quot;cN&quot;:&quot;GlobalNav_Search_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1c9c2m1r1a1&quot;}" aria-expanded="false">
+			<input id="cli_shellHeaderSearchInput" aria-label="search expanded" aria-autocomplete="list" aria-controls="universal-header-search-auto-suggest-transparent" aria-owns="universal-header-search-auto-suggest-ul" type="search" name="search" placeholder="Search" data-m="{&quot;cN&quot;:&quot;SearchBox_nav&quot;,&quot;id&quot;:&quot;n1c3c1c9c2m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c1c9c2m1r1a1&quot;}"><div class="x-screen-reader" aria-live="assertive"></div>
+			<button id="search" aria-label="Search" class="c-glyph" data-m="{&quot;cN&quot;:&quot;Search_nav&quot;,&quot;id&quot;:&quot;n2c3c1c9c2m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c3c1c9c2m1r1a1&quot;}" data-bi-dnt="true" data-bi-mto="true" aria-expanded="false">
+				<span role="presentation">Search</span>
+			</button>
+			<div class="m-auto-suggest" id="universal-header-search-auto-suggest-transparent" role="group">
+				<ul class="c-menu" id="universal-header-search-auto-suggest-ul" aria-hidden="true" data-bi-dnt="true" data-bi-mto="true" data-js-auto-suggest-position="default" role="listbox" data-tel="jsll" data-m="{&quot;cN&quot;:&quot;search suggestions_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c3c1c9c2m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c3c1c9c2m1r1a1&quot;}"></ul>
+			</div>
+			
+		<input name="scope" hidden=""><a class="search-scope" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" role="button" title="Search filter is &quot;App Center&quot;. Tap to remove." style=""><span class="search-scope-text">App Center</span> <span class="docon docon-navigate-close"></span></a></form>
+		<button data-m="{&quot;cN&quot;:&quot;cancel-search&quot;,&quot;pid&quot;:&quot;Cancel Search&quot;,&quot;id&quot;:&quot;nn4c1c9c2m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c1c9c2m1r1a1&quot;}" id="cancel-search" class="cancel-search" aria-label="Cancel Search">
+			<span>Cancel</span>
+		</button>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+	
+</header>
+
+
+
+
+    </div>
+        </div>
+
+    </div>
+</div>
+	<div class="content-header uhf-container has-padding has-default-focus" data-bi-name="content-header">
+		<nav class="has-padding-none-mobile" data-bi-name="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Breadcrumb">
+		<ul id="page-breadcrumbs" class="breadcrumbs"><!---->
+		<!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/">
+				Docs
+			</a>
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/visualstudio/products">
+				Visual Studio
+			</a>
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/appcenter">
+				App Center
+			</a>
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<a itemprop="item" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/">
+				Test
+			</a>
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<span itemprop="name">
+				Xamarin.<wbr>UITest
+			</span>
+		</li><!---->
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+			<span itemprop="name">
+				Introduction
+			</span>
+		</li><!---->
+	<!----></ul>
+		</nav>
+		<div class="content-header-controls">
+			<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-controls="sidebar" aria-haspopup="true">
+				<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+				<span>Contents</span>
+			</button>
+		</div>
+		<div class="content-header-controls exit-focus">
+			<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+				<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+				<span>Exit focus mode</span>
+			</button>
+			
+		</div>
+		<div class="action-bar">
+			<ul class="action-list">
+						<li>
+							<a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#feedback" class="button is-text is-small is-icon-only-touch" data-bi-name="comments">
+								<span class="icon">
+									<span class="docon docon-comment-lines" aria-hidden="true"></span>
+								</span>
+								<span class="action-item-text">Feedback</span>
+							</a>
+						</li>
+							<li id="contenteditbtn">
+									<a href="https://github.com/MicrosoftDocs/appcenter-docs/blob/live/docs/test-cloud/uitest/index.md" class="button is-text is-icon-only-touch is-small" title="Edit This Document" data-bi-name="edit" data-original_content_git_url="https://github.com/MicrosoftDocs/appcenter-docs-pr/blob/live/docs/test-cloud/uitest/index.md" data-original_content_git_url_template="" data-pr_repo="" data-pr_branch="">
+									<span class="icon">
+										<span class="docon docon-edit-outline" aria-hidden="true"></span>
+									</span>
+									<span class="action-item-text">Edit</span>
+								</a>
+							</li>
+				<li>
+					<div class="sharing dropdown has-caret" auto-align="">
+						<button class="dropdown-trigger button is-text is-small is-icon-only-touch" aria-controls="sharing-menu" aria-expanded="false" title="Share This Document" data-bi-name="share">
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-sharing"></span>
+							</span>
+							<span class="action-item-text">Share</span>
+						</button>
+						<div class="dropdown-menu" id="sharing-menu" role="menu">
+							<ul data-bi-name="share-links">
+								<li>
+									<a role="menuitem" class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F%3FWT.mc_id%3Dtwitter&amp;text=Xamarin.UITest%20-%20Visual%20Studio%20App%20Center%20%7C%20Microsoft%20Docs&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F%3FWT.mc_id%3Dtwitter">
+										<span class="icon">
+											<span class="docon docon-brand-twitter" aria-hidden="true"></span>
+										</span>
+										<span>Twitter</span>
+									</a>
+								</li>
+								<li>
+									<a role="menuitem" class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F%3FWT.mc_id%3Dlinkedin">
+										<span class="icon">
+											<span class="docon docon-brand-linkedin" aria-hidden="true"></span>
+										</span>
+										<span>LinkedIn</span>
+									</a>
+								</li>
+								<li>
+									<a role="menuitem" class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F%3FWT.mc_id%3Dfacebook">
+										<span class="icon">
+											<span class="docon docon-brand-facebook" aria-hidden="true"></span>
+										</span>
+										<span>Facebook</span>
+									</a>
+								</li>
+								<li>
+									<a role="menuitem" class="share-email" data-bi-name="email" href="mailto:?subject=%5BShared%20Article%5D%20Xamarin.UITest%20-%20Visual%20Studio%20App%20Center%20%7C%20Microsoft%20Docs&amp;body=Xamarin.UITest%20-%20Visual%20Studio%20App%20Center%20%7C%20Microsoft%20Docs%0A%0Ahttps%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F%3FWT.mc_id%3Demail">
+										<span class="icon">
+											<span class="docon docon-mail-message-fill" aria-hidden="true"></span>
+										</span>
+										<span>Email</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="is-unstyle-action-list-item">
+<div class="dropdown has-caret" auto-align="">
+	<button class="dropdown-trigger button is-text is-small is-icon-only-touch" aria-controls="theme-menu" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span class="action-item-text">Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<div class="theme-selector has-padding-small">
+			<div class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start is-selected" data-theme-to="light" role="menuitem" aria-selected="true">
+					<span class="theme-light">
+						<span class="theme-selector-icon css-variable-support has-border is-inline-block has-margin-right-small has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+Light					</span>
+				</button>
+			</div>
+			<div class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="dark" role="menuitem" aria-selected="false">
+					<span class="theme-dark">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-margin-right-small has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+Dark					</span>
+				</button>
+			</div>
+			<div class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="high-contrast" role="menuitem" aria-selected="false">
+					<span class="theme-high-contrast">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-margin-right-small has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+High contrast					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>				</li>
+				<li class="is-unstyled-action-list-item">
+					<a class="docs-sign-in auth-status-determined not-authenticated button is-text has-text-primary is-small" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#">Sign in</a>
+					<div class="dropdown has-caret auth-status-determined authenticated" auto-align="">
+						<button class="dropdown-trigger button is-text is-small is-icon-only-touch has-inner-focus" aria-label="Your Account" aria-haspopup="true" aria-controls="user-menu" aria-expanded="false">
+							<span class="icon" aria-hidden="true">
+								<span class="image">
+									<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+								</span>
+							</span>
+							<span class="is-truncated" data-profile-property="userName"></span>
+						</button>
+						<div class="dropdown-menu box" id="user-menu" role="menu">
+							<div class="media is-user-dir">
+								<div class="media-left">
+									<span class="image is-64x64" aria-hidden="true">
+										<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+									</span>
+								</div>
+								<div class="media-content">
+									<p class="title has-margin-top-small has-margin-bottom-small">
+										<span class="is-truncated" style="max-width: 200px" data-profile-property="userName"></span>
+									</p>
+									<p class="subtitle">
+										<span class="is-truncated" style="max-width: 200px" data-profile-property="upn"></span>
+									</p>
+								</div>
+							</div>
+							<ul class="is-unstyled has-margin-none">
+								<li><a href="https://docs.microsoft.com/profile" data-profile-property="profileUrl">Profile</a></li>
+								<li><a class="docs-sign-out" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#">Sign out</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button type="button" class="contents-button" aria-label="Contents" data-bi-name="contents-expand-">
+				<span class="docon docon-editor-list-bullet"></span><span>Contents</span>
+			</button>
+		</div>
+	</div>
+
+		<div id="banner-holder" class="has-default-focus has-overflow-hidden">
+		</div>
+
+	<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus"></div>
+	</div>
+
+	<div class="mainContainer uhf-container  has-top-padding  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps ">
+
+			<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+				<div id="affixed-left-container" class="is-fixed is-flex is-flex-column" style="width: 237.12px; top: 24px; bottom: 24px;" data-bi-name="left toc"><form action="javascript:" role="search" aria-label="Search" class="is-full-width has-margin-bottom-small"><label class="visually-hidden" for="ax-0">Search</label><div class="autocomplete is-block" data-bi-name="autocomplete"><!---->
+		<input type="text" role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-0" class="autocomplete-input input is-small is-full-width" aria-expanded="false" aria-owns="ax-1-listbox" aria-activedescendant="" placeholder="Filter by title">
+
+		<span class="autocomplete-loader loader has-text-primary" aria-hidden="true" hidden=""></span>
+
+		<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-1-listbox" hidden="">
+			
+		</ul><!----></div></form><ul class="tree is-vertically-scrollable has-flex-grow has-flex-shrink" role="tree" aria-label="Table of contents" data-bi-name="tree"><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/">App Center Overview</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/help">Help &amp; Feedback</a></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Dashboard</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Build</span></li><li class="tree-item is-expanded" role="treeitem" tabindex="-1" aria-expanded="true"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Test</span><ul class="tree-group" role="group"><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/">Introduction</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/getting-started">Getting Started</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/core-concepts">Core Concepts</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/devices">Devices Available</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/environment-variables">Environment Variables</a></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Preparing Test for Upload</span></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/starting-a-test-run">Starting a Test Run</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/test-reports">Test Reports</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/security">Security</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/supported-frameworks">Supported Test Frameworks</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/vsts-plugin">Testing in Azure Dev<wbr>Ops (formerly VSTS)</a></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Troubleshooting</span></li><li class="tree-item is-expanded" role="treeitem" tabindex="-1" aria-expanded="true"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Xamarin.<wbr>UITest</span><ul class="tree-group" role="group"><li role="none"><a class="tree-item is-leaf is-selected" role="treeitem" tabindex="0" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/">Introduction</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/get-started-xamarin-forms">Get Started with Xamarin.<wbr>Forms</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/cheatsheet">Cheatsheet</a></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/license">License</a></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Working With</span></li></ul></li></ul></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Distribute</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Diagnostics</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Analytics</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Auth</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Data</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Push</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>SDK</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>General</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>GDPR</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Hockey<wbr>App Transition</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Migration</span></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Reference</span></li><li role="none"><a class="tree-item is-leaf" role="treeitem" tabindex="-1" data-bi-name="tree-leaf" href="https://docs.microsoft.com/en-us/appcenter/general/resources">Resources</a></li><li class="tree-item" role="treeitem" tabindex="-1" aria-expanded="false"><span class="tree-expander" data-bi-name="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Quickstarts</span></li></ul><a class="button is-small is-text has-flex-justify-content-start has-inner-focus has-margin-top-small has-border-top has-border-bottom" href="https://docs.microsoft.com/en-us/appcenter/opbuildpdf/TOC.pdf?branch=live" data-bi-name="downloadPdf"><!---->
+		<span class="icon is-size-8 has-text-subtle">
+			<span aria-hidden="true" class="docon docon-arrow-down"></span>
+		</span>
+		<span><!---->Download PDF<!----></span><!----></a></div>
+			</div>
+
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<div class="columns has-large-gaps ">
+
+
+				<div id="main-column" class="column  is-full is-four-fifths-desktop ">
+
+					<main id="main" role="main" class="content " data-bi-name="content" lang="en-us" dir="ltr">
+
+
+
+
+						<h1 id="xamarinuitest" sourcefile="test-cloud/uitest/index.md" sourcestartlinenumber="15">Xamarin.UITest</h1>
+
+						<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+							<li class="displayDate">
+								<time role="presentation" datetime="2019-05-13T00:00:00.000Z" data-article-date-source="ms.date">05/13/2019</time>
+							</li>
+								<li class="readingTime">15 minutes to read</li>
+							<li class="contributors-holder">
+								<span class="contributors-text">Contributors</span>
+								<ul class="contributors" data-bi-name="contributors">
+											<li><a href="https://github.com/glennwester" title="Glenn Wester" data-bi-name="contributorprofile"><img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/glennwester.png" data-src="https://github.com/glennwester.png?size=32" alt="Glenn Wester"></a></li>
+											<li><a href="https://github.com/jwargo" title="John M. Wargo" data-bi-name="contributorprofile"><img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/jwargo.png" data-src="https://github.com/jwargo.png?size=32" alt="John M. Wargo"></a></li>
+											<li><a href="https://github.com/Oddj0b" title="Villars Gimm" data-bi-name="contributorprofile"><img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/Oddj0b.png" data-src="https://github.com/Oddj0b.png?size=32" alt="Villars Gimm"></a></li>
+											<li><a href="https://github.com/King-of-Spades" title="Kent Green" data-bi-name="contributorprofile"><img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/King-of-Spades.png" data-src="https://github.com/King-of-Spades.png?size=32" alt="Kent Green"></a></li>
+											<li><a href="https://github.com/HobDev" title="Paramjit Singh" data-bi-name="contributorprofile"><img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/HobDev.png" data-src="https://github.com/HobDev.png?size=32" alt="Paramjit Singh"></a></li>
+											<li><a href="https://github.com/MicrosoftDocs/appcenter-docs/blob/live/docs/test-cloud/uitest/index.md" title="all 10 contributors" data-bi-name="contributorshowall"><span aria-hidden="true">all</span></a></li>
+								</ul>
+							</li>
+
+						</ul>
+
+
+
+						<nav id="center-doc-outline" class="doc-outline is-hidden-desktop" data-bi-name="intopic toc" role="navigation" aria-label="Article Outline">
+							<h3>In this article</h3>
+						<ol><li><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#introducing-the-xamarinuitest-api">Introducing the Xamarin.UITest API</a></li><li><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#interacting-with-the-user-interface">Interacting with the User Interface</a></li><li><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#using-the-repl">Using the REPL</a></li><li><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#using-marked-to-locate-views">Using Marked To Locate Views</a></li><li><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#controlling-the-application-with-xamarinuitestiapp">Controlling the Application with Xamarin.UITest.IApp</a></li></ol></nav>
+
+
+						<!-- <content> -->
+							
+<p><em>Xamarin.UITest</em> is a testing framework that enables Automated UI Acceptance Tests written in C# using the <a href="http://www.nunit.org/" data-linktype="external">NUnit</a> unit testing framework to be run against iOS and Android applications. It integrates tightly with Xamarin.iOS and Xamarin.Android projects but it can also be used with iOS and Android projects written natively in Objective-C/Swift and Java. Xamarin.UITest is the <em>Automation Library</em> that allows the NUnit tests to execute on Android and iOS devices. The tests interact with the user interface just as a user would: entering text, tapping buttons, and performing gestures - such as swipes.</p>
+<p>Typically, each Xamarin.UITest is written as a method that is referred to as a <em>test</em>. The class which contains the test is known as a <em>test fixture</em>. The test fixture contains either a single test or a logical grouping of tests and is responsible for any setup to make the test run and any cleanup that needs to be peformed when the test finishes. Each test should follow the <em>Arrange-Act-Assert</em> pattern:</p>
+<ol>
+<li><strong>Arrange</strong>: The test will setup conditions and initialize things so that the test can be actioned.</li>
+<li><strong>Act</strong>: The test will interact with the application, enter text, pushing buttons, and so on.</li>
+<li><strong>Assert</strong>: The test examines the results of the actions performed in the Act step to determine correctness. For example, the application may verify that a particular error message is displayed.</li>
+</ol>
+<p>The best time to get started with Xamarin.UITest is during the development of a mobile application. Automated tests are written as a feature is being developed according to the steps described in the following list:</p>
+<ol>
+<li>Develop the feature in the Android and/or iOS application.</li>
+<li>Write the tests and run them locally to verify functionality.</li>
+<li>Create a new Test Run in App Center Test, or use an existing Test Run.</li>
+<li>Compile the iOS app bundle or the Android APK and then upload this along with the tests to App Center Test.</li>
+<li>Fix any issues or bugs that are exposed by App Center Test.</li>
+<li>Repeat the process by moving on to the next feature for the application.</li>
+</ol>
+<p>For existing applications that are no longer under active development it may not be cost-effective to retroactively add automated tests. Instead, a better approach is to use Xamarin.UITest when fixing bugs. For example, consider an application that has no automated testing, and a user reports a bug. A developer assigned to fix that bug might take some (or all) of the following actions:</p>
+<ul>
+<li>Verify the bug or the regression manually.</li>
+<li>Write a test using Xamarin.UITest that demonstrates the bug.</li>
+<li>Submit the test to App Center test to gain some insight on the scope and impact of the bug on relevant devices.</li>
+<li>Fix the bug.</li>
+<li>Prove that the bug has been fixed with a passing Xamarin.UITest. This may be a completely new test, or a modification of the test created the previous step.</li>
+<li>Submit the fixes and test to App Center Test to verify that the bug has been fixed on the relevant devices.</li>
+<li>Check the passing tests into version control.</li>
+</ul>
+<p>Automated UI testing relies heavily on being able to locate and interact with views on the screen. Xamarin.UITest addresses this requirement with two important sets of APIs that work with each other:</p>
+<ol>
+<li><em>Actions</em> that can be performed on views - Xamarin.UITest provides APIs that allow a test to simulate common user actions such as tapping on the view, entering text, or swiping on the view.</li>
+<li><em>Queries</em> to locate views on the screen - Part of the Xamarin.UITest framework are APIs that will locate the views on a screen. Queries locate views at run time by inspecting attributes associated with the view and returning an object that the actions may work upon. Querying in such a manner is a powerful technique that allows tests to be written for user interfaces regardless of the screen size, orientation, or layout</li>
+</ol>
+<p>To help with writing tests, Xamarin.UITest provides a <em>read-eval-print-loop</em> (<a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" data-linktype="external"><em>REPL</em></a>). The REPL allows developers and testers to interact with a screen while the application is running and simplifies creating the queries.</p>
+<h2 id="introducing-the-xamarinuitest-api">Introducing the Xamarin.UITest API<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#introducing-the-xamarinuitest-api" aria-labelledby="introducing-the-xamarinuitest-api"></a></h2>
+<p>All test interactions with the mobile application occur through an instance of <code>Xamarin.UITest.IApp</code>. This interface defines the methods that are crucial for the test to collaborate with the application and interact with the user interface. There are two concrete implementations of this interface:</p>
+<ul>
+<li><strong><code>Xamarin.UITest.iOS.iOSApp</code></strong> &nbsp; This class will automate tests against iOS.</li>
+<li><strong><code>Xamarin.UITest.Android.AndroidApp</code></strong> &nbsp; This class is for automating tests on Android.</li>
+</ul>
+<p><code>iOSApp</code> and <code>AndroidApp</code> objects are not instantiated directly. Instead, they are created using the helper <code>ConfigureApp</code> class. This class is a builder that ensures that the <code>iOSApp</code> or <code>AndroidApp</code> is properly instantiated.</p>
+<p>It is recommended that a new <code>IApp</code> instance be used for each test; this will prevent state from one test spilling over into another, affecting the results and reliability of the downstream tests. There are two places where an NUnit test could initialize an instance of <code>IApp</code>:</p>
+<ul>
+<li><strong>In the <code>SetUp</code> method</strong> Typically, a test fixture is a logical grouping of related tests, each of them running independent of the other. In this scenario the <code>IApp</code> should be initialized in the <code>SetUp</code> method, ensuring that a new <code>IApp</code> is available for each test.</li>
+<li><strong>In the <code>TestFixtureSetup</code> method</strong>  In some situations a single test may require its own test fixture. In this case it may make more sense to initialize the <code>IApp</code> object once in the <code>TestFixtureSetup</code> method.</li>
+</ul>
+<p>Once <code>IApp</code> has been configured, a test may begin to interact with the application being tested. To do so, it is necessary to obtain references to the views that are visible on the screen. Many methods in Xamarin.UITest take a <code>Func&lt;AppQuery, AppQuery&gt;</code> parameter to locate the views. For example, the following snippet shows how to tap on a button:</p>
+<div class="codeHeader" id="code-try-0" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="app.Tap(c=&gt;c.Button(&quot;ValidateButton&quot;));
+">app.Tap(c=&gt;c.Button(<span class="hljs-string">"ValidateButton"</span>));
+</code></pre>
+<p>There are two implementations of the <code>IApp</code> interface within the Xamarin.UITest framework, one for iOS and one for Android.</p>
+<h3 id="initialize-iapp-for-ios-applications">Initialize IApp for iOS Applications<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#initialize-iapp-for-ios-applications" aria-labelledby="initialize-iapp-for-ios-applications"></a></h3>
+<p>When Xamarin.UITest runs a test on iOS, it will start up an instance of the iOS simulator, deploy the application, start it, and begin running the tests. The iOS application must already be built – Xamarin.UITest will not compile the application and create the App Bundle for you.</p>
+<p>The <code>AppBundle</code> method can be used to specify where on the file system the app bundle may be found. There are two ways to do so, with an absolute path, or a relative path. This snippet shows using an absolute path to the app bundle:</p>
+<div class="codeHeader" id="code-try-1" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="IApp app = ConfigureApp
+    .iOS
+    .AppBundle(&quot;/path/to/iosapp.app&quot;)
+    .StartApp();
+">IApp app = ConfigureApp
+    .iOS
+    .AppBundle(<span class="hljs-string">"/path/to/iosapp.app"</span>)
+    .StartApp();
+</code></pre>
+<p>To use a relative path, the path must be relative to the Xamarin.UITest assembly. This snippet is and example of how to use a relative path to locate the app bundle:</p>
+<div class="codeHeader" id="code-try-2" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="IApp app = ConfigureApp
+    .iOS
+    .AppBundle(&quot;../../../iOSAppProject/bin/iPhoneSimulator/Debug/iosapp.app&quot;)
+    .StartApp();
+">IApp app = ConfigureApp
+    .iOS
+    .AppBundle(<span class="hljs-string">"../../../iOSAppProject/bin/iPhoneSimulator/Debug/iosapp.app"</span>)
+    .StartApp();
+</code></pre>
+<p>The relative path example tells <code>AppBundle</code> to go up three directories from the Xamarin.UITest assembly, and then navigate down the project tree of the iOS application project to find the app bundle.</p>
+<p><code>ConfigureApp</code> does have other methods to help configure <code>IApp</code>. See the <a href="https://developer.xamarin.com/api/type/Xamarin.UITest.Configuration.iOSAppConfigurator/" data-linktype="external">iOSAppConfigurator</a> class for more details. Some of the more interesting methods are described in the following table:</p>
+<div class="table-scroll-wrapper"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AppBundle</code></td>
+<td>This method specifies the path to the app bundle to use when testing.</td>
+</tr>
+<tr>
+<td><code>Debug</code></td>
+<td>This method will enable debug logging messages in the test runner. This method is useful to troubleshoot problems with running the application on the simulator.</td>
+</tr>
+<tr>
+<td><code>DeviceIdentifier</code></td>
+<td>Configures the device to use with the device identifier. This method will be described in more detail below.</td>
+</tr>
+<tr>
+<td><code>EnableLocalScreenshots</code></td>
+<td>Enable screenshots when running tests locally. Screenshots are always enabled when tests are running in the cloud.</td>
+</tr>
+</tbody>
+</table></div>
+<p>For more information on how to run iOS tests on a specific iOS Simulator, please see <a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/cheatsheet#get_device_id_for_ios_simulator" data-linktype="external">Determine the Device ID for an iOS Simulator</a>.</p>
+<h3 id="initialize-iapp-for-android-applications">Initialize IApp for Android Applications<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#initialize-iapp-for-android-applications" aria-labelledby="initialize-iapp-for-android-applications"></a></h3>
+<p>Xamarin.UITest will deploy an existing APK to an attached device or an instance of the Android emulator that is already running. The app will be started, and then the test will be run. Xamarin.UITest cannot build the APK nor can it start an instance of the Android emulator.</p>
+<p>The <code>ApkFile</code> method of <code>IApp</code> is used to specify where on the file system the APK may be found. There are two ways to do so, with an absolute path, or a relative path. This snippet shows using an absolute path to the APK:</p>
+<div class="codeHeader" id="code-try-3" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="IApp app = ConfigureApp
+    .Android
+    .ApkFile(&quot;/path/to/android.apk&quot;)
+    .StartApp();
+">IApp app = ConfigureApp
+    .Android
+    .ApkFile(<span class="hljs-string">"/path/to/android.apk"</span>)
+    .StartApp();
+</code></pre>
+<p>To use a relative path, the path must be relative to the Xamarin.UITest assembly. This snippet is an example of how to use a relative path to locate the app bundle:</p>
+<div class="codeHeader" id="code-try-4" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="IApp app = ConfigureApp
+    .Android
+    .ApkFile(&quot;../../../AndroidProject/bin/Debug/android.apk&quot;)
+    .StartApp();
+">IApp app = ConfigureApp
+    .Android
+    .ApkFile(<span class="hljs-string">"../../../AndroidProject/bin/Debug/android.apk"</span>)
+    .StartApp();
+</code></pre>
+<p>The relative path example tells <code>ApkFile</code> to go up three directories from the Xamarin.UITest assembly, and then navigate down the project tree of the Android application project to find the apk file.</p>
+<p>If there is more than one device or emulator connected, Xamarin.UITest will halt test execution and display an error message as it is unable to resolve what the intended target is for the test. In this case, it will be necessary to provide the <em>serial ID</em> of the device/emulator that should be used to run the test. For example, consider the following output from the <code>adb devices</code> command which will list all of the devices (or emulators) attached to the computer (along with their serial ID):</p>
+<div class="codeHeader" id="code-try-5" data-bi-name="code-header"><span class="language">bash</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-bash" data-author-content="$ adb devices
+List of devices attached
+192.168.56.101:5555 device
+03f80ddae07844d3    device
+">$ adb devices
+List of devices attached
+192.168.56.101:5555 device
+03f80ddae07844d3    device
+</code></pre>
+<p>The device can be specified using the <code>DeviceSerial</code> method:</p>
+<div class="codeHeader" id="code-try-6" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="IApp app = ConfigureApp.Android.ApkFile(&quot;/path/to/android.apk&quot;)
+                               .DeviceSerial(&quot;03f80ddae07844d3&quot;)
+                               .StartApp();
+">IApp app = ConfigureApp.Android.ApkFile(<span class="hljs-string">"/path/to/android.apk"</span>)
+                               .DeviceSerial(<span class="hljs-string">"03f80ddae07844d3"</span>)
+                               .StartApp();
+</code></pre>
+<h2 id="interacting-with-the-user-interface">Interacting with the User Interface<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#interacting-with-the-user-interface" aria-labelledby="interacting-with-the-user-interface"></a></h2>
+<p>To interact with views, many <code>IApp</code> methods take a <a href="httpa://msdn.microsoft.com/library/bb549151(v=vs.110).aspx" data-linktype="external"><code>Func&lt;AppQuery, AppQuery&gt;</code></a> delegate for locating the view. This delegate in turn uses <a href="https://developer.xamarin.com/api/type/Xamarin.UITest.Queries.AppQuery/" data-linktype="external"><code>AppQuery</code></a>, which is at the core of how Xamarin.UITest locates views.</p>
+<p><code>AppQuery</code> is a <a href="https://en.wikipedia.org/wiki/Fluent_interface" data-linktype="external">fluent interface</a> for building the queries to locate views. Of the methods that <code>AppQuery</code> provides, the <code>Marked</code> method is one of the simplest and most flexible. This method uses a heuristic to try and locate views and will be discussed in more detail in the following section. For now, it is important to understand that <code>IApp</code> has many methods for interacting with an application. These methods use a <code>Func&lt;AppQuery, AppQuery&gt;</code> to obtain a reference to the view to interact with. Some of the more interesting methods provided by <code>AppQuery</code> are listed below:</p>
+<div class="table-scroll-wrapper"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Button</code></td>
+<td>Will locate one or more buttons on the screen.</td>
+</tr>
+<tr>
+<td><code>Class</code></td>
+<td>Will try to locate views that are of a specified class.</td>
+</tr>
+<tr>
+<td><code>Id</code></td>
+<td>Will try to locate a view with the specified Id.</td>
+</tr>
+<tr>
+<td><code>Index</code> .</td>
+<td>Will return one view from a collection of matching views. Usually used in conjunction with other methods. Takes a zero-based index.</td>
+</tr>
+<tr>
+<td><code>Marked</code></td>
+<td>Will return a view according to the heuristics discussed below.</td>
+</tr>
+<tr>
+<td><code>Text</code></td>
+<td>Will match views that contain the provided text.</td>
+</tr>
+<tr>
+<td><code>TextField</code></td>
+<td>Will match an Android <code>EditText</code> or iOS <code>UITextField</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p>For example, the following method shows how to simulate a tap on a button called "SaveUserdataButton":</p>
+<div class="codeHeader" id="code-try-7" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="app.Tap(c=&gt;c.Marked(&quot;SaveUserDataButton&quot;));
+">app.Tap(c=&gt;c.Marked(<span class="hljs-string">"SaveUserDataButton"</span>));
+</code></pre>
+<p>Because <code>AppQuery</code> is a fluent interface, it is  possible to chain together multiple method invocations together. Consider this more complicated example of tapping on a view:</p>
+<div class="codeHeader" id="code-try-8" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="app.Tap(c=&gt;c.Marked(&quot;Pending&quot;)
+            .Parent()
+            .Class(&quot;AppointmentListCell&quot;).Index(0));
+">app.Tap(c=&gt;c.Marked(<span class="hljs-string">"Pending"</span>)
+            .Parent()
+            .Class(<span class="hljs-string">"AppointmentListCell"</span>).Index(<span class="hljs-number">0</span>));
+</code></pre>
+<p>Here, the <code>AppQuery</code> will first find a view marked <code>Pending</code>, then select the first parent of that view that is a <code>AppointmentListCell</code> type.</p>
+<p>It can be tricky trying to create these queries by just looking at a mobile app. Xamarin.UITest provides a REPL that can be used to explore the view hierarchy of a screen, experiment with creating queries, and use them to interact with an application.</p>
+<h2 id="using-the-repl">Using the REPL<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#using-the-repl" aria-labelledby="using-the-repl"></a></h2>
+<p>The only way to start the REPL is to invoke the <code>IApp.Repl</code> method within an existing test. This requires creating an NUnit <code>TestFixture</code>, configuring an instance of <code>IApp</code> that can be used in a <code>Test</code> method. The following code snippet shows an example of how to do so:</p>
+<div class="codeHeader" id="code-try-9" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="[TestFixture]
+public class ValidateCreditCard
+{
+    IApp app;
+
+    [SetUp]
+    public void Setup()
+    {
+        app = ConfigureApp.Android.AppBundle(&quot;/path/to/application.apk&quot;).StartApp();
+    }
+    [Test]
+    public void CreditCardNumber_TooLong_DisplayErrorMessage()
+    {
+        app.Repl();
+    }
+}
+">[<span class="hljs-meta">TestFixture</span>]
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ValidateCreditCard</span>
+{
+    IApp app;
+
+    [<span class="hljs-meta">SetUp</span>]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Setup</span>(<span class="hljs-params"></span>)
+    </span>{
+        app = ConfigureApp.Android.AppBundle(<span class="hljs-string">"/path/to/application.apk"</span>).StartApp();
+    }
+    [<span class="hljs-meta">Test</span>]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">CreditCardNumber_TooLong_DisplayErrorMessage</span>(<span class="hljs-params"></span>)
+    </span>{
+        app.Repl();
+    }
+}
+</code></pre>
+<p>To run the test by right clicking in the gutter of Visual Studio and selecting <strong>Run</strong>:</p>
+<p><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/images/index-01-xs.png#lightbox" data-linktype="relative-path" class="lightbox-enabled" data-bi-name="lightbox"> <img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/index-01-xs-sml.png" alt="Screenshot of the popup menu with the run options for a test" data-linktype="relative-path"></a></p>
+<p>The test will run, and when the <code>Repl</code> method is invoked, Xamarin.UITest will start the REPL in a terminal session, as shown in the following screenshot:</p>
+<p><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/images/index-02-xs.png#lightbox" data-linktype="relative-path" class="lightbox-enabled" data-bi-name="lightbox"> <img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/index-02-xs-sml.png" alt="Screenshot of the macOS terminal running the Xamarin.UITest REPL" data-linktype="relative-path"></a></p>
+<p>Notice that the REPL has initialized an instance of <code>IApp</code> that is called <code>app</code>, which can be used to interact with the application. At this point, one of the first things to do is to explore the user interface. The REPL has a <code>tree</code> command that will do exactly that. It will print out the hierarchy of views in the displayed screen. As an example, consider the following screenshot of an application:</p>
+<p><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/images/index-03-xs.png#lightbox" data-linktype="relative-path" class="lightbox-enabled" data-bi-name="lightbox"> <img src="./Xamarin.UITest - Visual Studio App Center _ Microsoft Docs_files/index-03-xs-sml.png" alt="Screenshot of a sample application running on an iPhone" data-linktype="relative-path"></a></p>
+<p>We can use the <code>tree</code> command to display the following hierarchy of this screen:</p>
+<div class="codeHeader" id="code-try-10" data-bi-name="code-header"><span class="language">bash</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-bash" data-author-content="App has been initialized to the &#39;app&#39; variable.
+Exit REPL with ctrl-c or see help for more commands.
+
+&gt;&gt;&gt; tree
+[UIWindow &gt; UILayoutContainerView]
+  [UINavigationTransitionView &gt; ... &gt; UIView]
+    [UITextView] id: &quot;CreditCardTextField&quot;
+      [_UITextContainerView]
+    [UIButton] id: &quot;ValidateButton&quot;
+      [UIButtonLabel] text: &quot;Validate Credit Card&quot;
+    [UILabel] id: &quot;ErrorrMessagesTestField&quot;
+  [UINavigationBar] id: &quot;Credit Card Validation&quot;
+    [_UINavigationBarBackground]
+      [_UIBackdropView &gt; _UIBackdropEffectView]
+      [UIImageView]
+    [UINavigationItemView]
+      [UILabel] text: &quot;Credit Card Validation&quot;
+&gt;&gt;&gt;
+">App has been initialized to the <span class="hljs-string">'app'</span> variable.
+Exit REPL with ctrl-c or see <span class="hljs-built_in">help</span> <span class="hljs-keyword">for</span> more commands.
+
+&gt;&gt;&gt; tree
+[UIWindow &gt; UILayoutContainerView]
+  [UINavigationTransitionView &gt; ... &gt; UIView]
+    [UITextView] id: <span class="hljs-string">"CreditCardTextField"</span>
+      [_UITextContainerView]
+    [UIButton] id: <span class="hljs-string">"ValidateButton"</span>
+      [UIButtonLabel] text: <span class="hljs-string">"Validate Credit Card"</span>
+    [UILabel] id: <span class="hljs-string">"ErrorrMessagesTestField"</span>
+  [UINavigationBar] id: <span class="hljs-string">"Credit Card Validation"</span>
+    [_UINavigationBarBackground]
+      [_UIBackdropView &gt; _UIBackdropEffectView]
+      [UIImageView]
+    [UINavigationItemView]
+      [UILabel] text: <span class="hljs-string">"Credit Card Validation"</span>
+&gt;&gt;&gt;
+</code></pre>
+<p>We can see that there is a <code>UIButton</code> in this view with the <code>id</code> of <strong>ValidateButton</strong>. We can use the information displayed by the <code>tree</code> command to help craft the necessary queries to locate and interact with views. For example, the following code simulates a tap on the button:</p>
+<div class="codeHeader" id="code-try-11" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="app.Tap(c=&gt;c.Marked(&quot;ValidateButton&quot;))
+">app.Tap(c=&gt;c.Marked(<span class="hljs-string">"ValidateButton"</span>))
+</code></pre>
+<p>As commands are being entered, they are remembered by the REPL in a buffer. The REPL provides a <code>copy</code> command that will copy the contents of this buffer to the clipboard. This technique allows us to prototype a test interactively. We can copy the work performed in the REPL to the clipboard with <code>copy</code>, and then paste those commands inside a <code>[Test]</code>.</p>
+<h2 id="using-marked-to-locate-views">Using Marked To Locate Views<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#using-marked-to-locate-views" aria-labelledby="using-marked-to-locate-views"></a></h2>
+<p>The <a href="https://developer.xamarin.com/api/member/Xamarin.UITest.Queries.AppQuery.Marked/" data-linktype="external">AppQuery.Marked</a> method is a convenient and powerful way to query for views on screen. It works by inspecting the view hierarchy for a view on the screen, trying to match the properties on the view with to the provided string. <code>Marked</code> works differently depending on the operating system.</p>
+<h3 id="finding-ios-views-with-marked">Finding iOS Views with Marked<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#finding-ios-views-with-marked" aria-labelledby="finding-ios-views-with-marked"></a></h3>
+<p>iOS views will be located using one of the following attributes:</p>
+<ul>
+<li>the <code>AccessibilityIdentifier</code> of the view</li>
+<li>the <code>AccessibilityLabel</code> of the view</li>
+</ul>
+<p>As an example, consider the following C# snippet which creates a <code>UILabel</code> and sets the <code>AccessibilityLabel</code>:</p>
+<div class="codeHeader" id="code-try-12" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="UILabel errorMessagesTextField = new UILabel(new RectangleF(10, 210, 300, 40));
+errorMessagesTextField.AccessibilityLabel = &quot;ErrorMessagesTextField&quot;;
+errorMessagesTextField.Text = String.Empty;
+">UILabel errorMessagesTextField = <span class="hljs-keyword">new</span> UILabel(<span class="hljs-keyword">new</span> RectangleF(<span class="hljs-number">10</span>, <span class="hljs-number">210</span>, <span class="hljs-number">300</span>, <span class="hljs-number">40</span>));
+errorMessagesTextField.AccessibilityLabel = <span class="hljs-string">"ErrorMessagesTextField"</span>;
+errorMessagesTextField.Text = String.Empty;
+</code></pre>
+<p>This view can be located by the following query:</p>
+<div class="codeHeader" id="code-try-13" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="AppResult[] results = app.Marked(&quot;ErrorMessagesTextField&quot;);
+">AppResult[] results = app.Marked(<span class="hljs-string">"ErrorMessagesTextField"</span>);
+</code></pre>
+<h3 id="finding-android-views-with-marked">Finding Android Views with Marked<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#finding-android-views-with-marked" aria-labelledby="finding-android-views-with-marked"></a></h3>
+<p>Android views will be located based on one of the following properties:</p>
+<ul>
+<li>the <code>Id</code> of the view</li>
+<li>the <code>ContentDescription</code> of the view</li>
+<li>the <code>Text</code> of a view</li>
+</ul>
+<p>For example, consider an Android layout that has the following button defined:</p>
+<div class="codeHeader" id="code-try-14" data-bi-name="code-header"><span class="language">code-xml</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-code-xml" data-author-content="&lt;Button
+    android:text=&quot;Action 1&quot;
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:id=&quot;@+id/action1_button&quot;
+    android:layout_weight=&quot;1&quot;
+    android:layout_marginLeft=&quot;5dp&quot; /&gt;
+">&lt;Button
+    android:text="Action 1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/action1_button"
+    android:layout_weight="1"
+    android:layout_marginLeft="5dp" /&gt;
+</code></pre>
+<p>We can see that the <code>android:id</code> of this button is <em>action1_button</em> and that the <code>android:text</code> is <em>Action 1</em>. Either of the following two queries will locate the button on the screen:</p>
+<ul>
+<li><code>app.Query(c=&gt;c.Marked("action1_button"));</code></li>
+<li><code>app.Query(c=&gt;c.Marked("Action 1"));</code></li>
+</ul>
+<h2 id="controlling-the-application-with-xamarinuitestiapp">Controlling the Application with Xamarin.UITest.IApp<a class="docon docon-link heading-anchor" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#controlling-the-application-with-xamarinuitestiapp" aria-labelledby="controlling-the-application-with-xamarinuitestiapp"></a></h2>
+<p class="x-hidden-focus">Once <code>IApp</code> has been configured and initialized, the test may begin interacting with the application. One example of a method using  <code>Func&lt;AppQuery, AppQuery&gt;</code> is the <code>IApp.Query()</code> method. This method will execute the query and return the results. The simplest example is shown in the following snippet, which will return a list of all views that are visible on the screen:</p>
+<div class="codeHeader" id="code-try-15" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="AppResult[] results = app.Query(c=&gt;c.All())
+">AppResult[] results = app.Query(c=&gt;c.All())
+</code></pre>
+<p>The following table demonstrates some other examples of using <code>AppQuery</code> to locate views on the screen:</p>
+<div class="table-scroll-wrapper"><table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app.Query(c=&gt;c.Class("UILabel"))</code></td>
+<td>The <code>.Class()</code> method will query for views that are a subclass of an iOS <code>UILabel</code>.</td>
+</tr>
+<tr>
+<td><code>app.Query(c=&gt;c.Id("txtUserName"))</code></td>
+<td>The <code>.Id()</code> method will query for views with an <code>Id</code> of <strong>txtUserName</strong>.</td>
+</tr>
+<tr>
+<td><code>app.Query(c=&gt;c.Class("UILabel").Text("Hello, World"))</code></td>
+<td>Locates all <code>UILabel</code> classes that have the text "Hello, World".</td>
+</tr>
+<tr>
+<td><code>results = app.Query(c=&gt;c.Marked("ValidateButton"))</code></td>
+<td>Returns all views that are <em>marked</em> with the specified text. The <code>Marked</code> method is a useful method that can simplify queries. It will be covered in the following section.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The next table lists some (but not all) of the methods provided by <code>IApp</code> that can be used to interact with or manipulate views on the screen:</p>
+<div class="table-scroll-wrapper"><table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PressEnter</code></td>
+<td>Press the enter key in the app.</td>
+</tr>
+<tr>
+<td><code>Tap</code></td>
+<td>Simulates a tap / touch gesture on the matched element.</td>
+</tr>
+<tr>
+<td><code>EnterText</code></td>
+<td>Enters text into the view. In an iOS application, Xamarin.UITest will enter the text using the soft keyboard. In contrast, Xamarin.UITest will not use the Android keyboard, it will directly enter the text into the view.</td>
+</tr>
+<tr>
+<td><code>WaitForElement</code></td>
+<td>Pauses the execution of the test until the views appear on the screen.</td>
+</tr>
+<tr>
+<td><code>Screenshot(String)</code></td>
+<td>Takes a screenshot of the application in it's current state and saves it to disk. It returns a <code>FileInfo</code> object with information about the screenshot taken.</td>
+</tr>
+<tr>
+<td><code>Flash</code></td>
+<td>This method will cause the selected view to "flash" or "flicker" on the screen.</td>
+</tr>
+</tbody>
+</table></div>
+<p>For more information on the <a href="https://developer.xamarin.com/api/type/Xamarin.UITest.IApp/" data-linktype="external"><code>IApp</code></a> interface, please consult the <a href="https://developer.xamarin.com/api/root/Xamarin.UITest.Docs/" data-linktype="external">API documentation</a> for <a href="https://developer.xamarin.com/api/type/Xamarin.UITest.IApp/" data-linktype="external"><code>IApp</code></a>, <a href="https://developer.xamarin.com/api/type/Xamarin.UITest.Android.AndroidApp/" data-linktype="external"><code>AndroidApp</code></a>, and <a href="https://developer.xamarin.com/api/type/Xamarin.UITest.iOS.iOSApp/" data-linktype="external"><code>iOSApp</code></a>.</p>
+<p>As an example of how to use these methods, consider the following test for the screenshot that was displayed above. This test will enter a 17-digit number for a credit card into a text field and then tap a button on the screen. It will then inspect the screen for an error message informing the user that the number is too long to be a valid credit card number:</p>
+<div class="codeHeader" id="code-try-16" data-bi-name="code-header"><span class="language">C#</span>
+			<button class="action" data-bi-name="copy" aria-label="Copy code">
+				<span class="docon docon-edit-copy" role="presentation"></span>
+				<span>Copy</span>
+			</button></div><pre tabindex="0" class="has-inner-focus"><code class="lang-csharp" data-author-content="[Test]
+public void CreditCardNumber_TooLong_DisplayErrorMessage()
+{
+    /* Arrange - set up our queries for the views */
+    // Nothing to do here, app has been instantiated in the [SetUp] method.
+
+    /* Act */
+    app.EnterText(c =&gt; c.Marked(&quot;CreditCardTextField&quot;), new string(&#39;9&#39;, 17));
+    // Screenshot can be used to break this test up into &quot;steps&quot;. The
+    // screenshot can be inspected after the test run to verify the
+    // visual correctness of the screen.
+    app.Screenshot(&quot;Entering a 17 digit credit card number.&quot;);
+
+    app.Tap(c =&gt; c.Marked(&quot;ValidateButton&quot;));
+    app.Screenshot(&quot;The validation results.&quot;);
+
+    /* Assert */
+    AppResult[] result = app.Query(c =&gt; c.Class(&quot;UILabel&quot;).Text(&quot;Credit card number is too long.&quot;));
+    Assert.IsTrue(result.Any(), &quot;The error message is not being displayed.&quot;);
+}
+">[<span class="hljs-meta">Test</span>]
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">CreditCardNumber_TooLong_DisplayErrorMessage</span>(<span class="hljs-params"></span>)
+</span>{
+    <span class="hljs-comment">/* Arrange - set up our queries for the views */</span>
+    <span class="hljs-comment">// Nothing to do here, app has been instantiated in the [SetUp] method.</span>
+
+    <span class="hljs-comment">/* Act */</span>
+    app.EnterText(c =&gt; c.Marked(<span class="hljs-string">"CreditCardTextField"</span>), <span class="hljs-keyword">new</span> <span class="hljs-keyword">string</span>(<span class="hljs-string">'9'</span>, <span class="hljs-number">17</span>));
+    <span class="hljs-comment">// Screenshot can be used to break this test up into "steps". The</span>
+    <span class="hljs-comment">// screenshot can be inspected after the test run to verify the</span>
+    <span class="hljs-comment">// visual correctness of the screen.</span>
+    app.Screenshot(<span class="hljs-string">"Entering a 17 digit credit card number."</span>);
+
+    app.Tap(c =&gt; c.Marked(<span class="hljs-string">"ValidateButton"</span>));
+    app.Screenshot(<span class="hljs-string">"The validation results."</span>);
+
+    <span class="hljs-comment">/* Assert */</span>
+    AppResult[] result = app.Query(c =&gt; c.Class(<span class="hljs-string">"UILabel"</span>).Text(<span class="hljs-string">"Credit card number is too long."</span>));
+    Assert.IsTrue(result.Any(), <span class="hljs-string">"The error message is not being displayed."</span>);
+}
+</code></pre>
+<p>This test also uses the <code>Screenshot</code> method to take pictures at key points during the test execution. When this test is run, App Center will take the screenshots and display them in the test results. This provides a way to break a test up into steps and a provide a description of what the screenshot is about.</p>
+
+						<!-- </content> -->
+
+						</main>
+
+						<!-- feedback section -->
+
+
+
+<section class="feedback-section" data-bi-name="feedback-section">
+
+
+	<h2 id="feedback">Feedback</h2>
+
+	<div class="alert choose-feedback-type">
+		<p id="send-feedback-about">Send feedback about:</p>
+
+		<div class="choose-feedback-buttons">
+			<a class="button feedback-type-product has-margin-bottom-small" aria-describedby="send-feedback-about" href="https://intercom.help/appcenter/getting-started/getting-help-with-app-center" data-bi-name="product-feedback">
+				<span>This product</span>
+				<span class="icon docon docon-navigate-external" aria-hidden="true"></span>
+			</a>
+
+			<div class="field has-addons is-inline-flex has-margin-bottom-small">
+				<div class="control has-margin-top-none has-margin-bottom-none">
+					<button class="button feedback-sign-in-button has-text-wrap" aria-describedby="send-feedback-about" data-bi-name="feedback-sign-in">
+						<span class="icon docon docon-brand-github" aria-hidden="true"></span>
+						<span>This page</span>
+					</button>
+				</div>
+				<div class="control dropdown has-caret has-margin-top-none has-margin-bottom-none" auto-align="">
+					<button class="button dropdown-trigger is-full-height" aria-describedby="send-feedback-about" aria-haspopup="true" aria-expanded="false" aria-controls="fbm0" aria-label="Additional feedback options" data-bi-name="documentation-feedback-menu">
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-chevron-down-light expanded-indicator"></span>
+						</span>
+					</button>
+					<div id="fbm0" class="dropdown-menu documentation-feedback-menu">
+						You may also leave feedback directly on <a data-bi-name="create-issue-on-github" href="https://github.com/MicrosoftDocs/appcenter-docs/issues/new?title=&amp;body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%208a0474be-6e14-b8e6-b6cf-934a04f0e509%0A*%20Version%20Independent%20ID%3A%204a79fc1d-8dca-1c17-718f-c30fda180f05%0A*%20Content%3A%20%5BXamarin.UITest%20-%20Visual%20Studio%20App%20Center%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F)%0A*%20Content%20Source%3A%20%5Bdocs%2Ftest-cloud%2Fuitest%2Findex.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fappcenter-docs%2Fblob%2Flive%2Fdocs%2Ftest-cloud%2Fuitest%2Findex.md)%0A*%20Service%3A%20**vs-appcenter**%0A*%20GitHub%20Login%3A%20%40glennwester%0A*%20Microsoft%20Alias%3A%20**glwest**">GitHub <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.					</div>
+				</div>
+			</div>
+
+			<div class="field has-addons is-inline-flex has-margin-bottom-small" hidden="">
+				<div class="control has-margin-top-none has-margin-bottom-none">
+					<button class="button feedback-form-toggle" aria-describedby="send-feedback-about" aria-expanded="false" aria-controls="feedback-form" data-bi-name="documentation-feedback">
+This page					</button>
+				</div>
+				<div class="control dropdown has-caret has-margin-top-none has-margin-bottom-none" auto-align="">
+					<button class="button dropdown-trigger" aria-describedby="send-feedback-about" aria-haspopup="true" aria-expanded="false" aria-controls="fbm1" aria-label="Additional feedback options" data-bi-name="documentation-feedback-menu">
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-chevron-down-light expanded-indicator"></span>
+						</span>
+					</button>
+					<div id="fbm1" class="dropdown-menu documentation-feedback-menu">
+						You may also leave feedback directly on <a data-bi-name="create-issue-on-github" href="https://github.com/MicrosoftDocs/appcenter-docs/issues/new?title=&amp;body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%208a0474be-6e14-b8e6-b6cf-934a04f0e509%0A*%20Version%20Independent%20ID%3A%204a79fc1d-8dca-1c17-718f-c30fda180f05%0A*%20Content%3A%20%5BXamarin.UITest%20-%20Visual%20Studio%20App%20Center%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Ftest-cloud%2Fuitest%2F)%0A*%20Content%20Source%3A%20%5Bdocs%2Ftest-cloud%2Fuitest%2Findex.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fappcenter-docs%2Fblob%2Flive%2Fdocs%2Ftest-cloud%2Fuitest%2Findex.md)%0A*%20Service%3A%20**vs-appcenter**%0A*%20GitHub%20Login%3A%20%40glennwester%0A*%20Microsoft%20Alias%3A%20**glwest**">GitHub <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form class="feedback-form" id="feedback-form" accept-charset="UTF-8" autocomplete="off" action="javascript:" hidden="">
+		<h3 class="feedback-form-heading current-user">
+			<img class="avatar" alt="Avatar" width="36" height="36" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9InRyYW5zcGFyZW50IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==">
+			<span class="username" aria-hidden="true"></span>
+			<span class="visually-hidden">Liquid error: Can't find the localized string giveDocumentationFeedback for template Conceptual.</span>
+		</h3>
+
+		<label>
+			<span class="visually-hidden">Issue Title</span>
+			<input class="input is-radiusless has-margin-bottom-small" name="title" type="text" placeholder="Issue Title" required="" pattern=".*[^\s]+.*">
+		</label>
+		<label>
+			<span class="visually-hidden">Leave a comment</span>
+			<textarea name="body" placeholder="Leave a comment" class="textarea is-radiusless" required=""></textarea>
+		</label>
+
+		<div class="action-container">
+			<button class="button is-primary" type="submit" name="submit">Submit feedback</button>
+		</div>
+	</form>
+
+	<div class="feedback-status alert is-loading" role="alert" hidden=""><p>Loading feedback...</p></div>
+
+	<div class="feedback-tab-group tabGroup" data-tab-group-independent="" data-bi-name="tab-group">
+		<ul role="tablist">
+			<li role="presentation">
+				<a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#tabpanel-issues-open" role="tab" aria-controls="tabpanel-issues-open" data-tab="issues-open" aria-label="Open Issues" data-bi-name="tab" aria-selected="true" tabindex="0">0 Open</a>
+			</li>
+			<li role="presentation">
+				<a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#tabpanel-issues-closed" role="tab" aria-controls="tabpanel-issues-closed" data-tab="issues-closed" aria-label="Closed Issues" data-bi-name="tab" aria-selected="false" tabindex="-1">3 Closed</a>
+			</li>
+		</ul>
+		<section id="tabpanel-issues-open" role="tabpanel" data-tab="issues-open">
+			<div class="no-issues-placeholder">There are no open issues</div>
+			<ul class="github-issues-list" aria-label="Open Issues"></ul>
+		</section>
+		<section id="tabpanel-issues-closed" role="tabpanel" data-tab="issues-closed" hidden="hidden" aria-hidden="true">
+			<div class="no-issues-placeholder" hidden="">There are no closed issues</div>
+			<ul class="github-issues-list" aria-label="Closed Issues"><li>
+		<article>
+			<div class="github-issue " data-github-user="juepiezhongren">
+				<h3 class="visually-hidden">we need docs about how to debug test against java-apk via real device.</h3>
+				<div class="issue-title-container">
+					<a class="issue-title muted-link" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="issue-expander" role="button" aria-expanded="false" aria-controls="issue-327-body issue-327-comments issue-327-reactions issue-327-reactions-menu">
+						<span class="visually-hidden">Toggle issue&nbsp;</span>
+						<span class="expand-indicator text-subtle docon docon-chevron-right-light" aria-hidden="true"></span>
+						we need docs about how to debug test against java-apk via real device.
+					</a>
+					<div class="title-aside">
+						
+		<div class="github-reactions-dropdown dropdown has-caret" auto-align="" data-bi-name="reactions-menu" id="issue-327-reactions-menu" hidden="">
+			<button class="dropdown-trigger muted-link text-subtle" aria-label="Choose reaction" aria-haspopup="true" aria-controls="ax-2">
+				<span class="docon docon-octicon-plus-small" aria-hidden="true"></span>
+				<span class="docon docon-octicon-smiley" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown-menu" id="ax-2" role="menu" aria-label="Pick your reaction">
+				<a class="feedback-sign-in-button" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="feedback-reaction-sign-in">
+					<span class="icon"><span class="docon docon-brand-github" aria-hidden="true"></span></span>
+					<span>Sign in to add your reaction</span>
+				</a>
+				<div>
+					<span class="pick-reaction">Pick your reaction</span>
+					
+		<div class="github-reactions " data-bi-name="reactions">
+			
+		<button class="github-reaction" type="button" aria-label="+1" data-label-format="+1" data-reaction-type="+1" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="-1" data-label-format="-1" data-reaction-type="-1" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Laugh" data-label-format="Laugh" data-reaction-type="laugh" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Hooray" data-label-format="Hooray" data-reaction-type="hooray" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Confused" data-label-format="Confused" data-reaction-type="confused" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Heart" data-label-format="Heart" data-reaction-type="heart" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="heart">
+		</button>
+			
+		</div>
+				</div>
+			</div>
+		</div>
+						<button class="comment-count muted-link text-subtle" data-issue="327" data-count="1" tabindex="-1" role="button" aria-label="Toggle issue">
+							<span class="docon docon-comment-outline" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+				<div class="issue-body github-content" id="issue-327-body" hidden="" data-bi-name="issue-body">
+					<p>said above</p>
+
+
+
+
+				</div>
+				<div class="issue-footer">
+					<div class="text-subtle">
+						<a class="issue-number" href="https://github.com/MicrosoftDocs/appcenter-docs/issues/327" data-bi-name="github-issue" title="View this issue on GitHub"><cite>#327</cite></a>
+						opened <time datetime="2018-10-24T01:12:28Z">on Oct 24, 2018</time> by <a class="issue-author" href="https://github.com/juepiezhongren" data-bi-name="github-issue-user" title="View juepiezhongren on GitHub">juepiezhongren</a>
+						
+					</div>
+				</div>
+				
+		<div class="github-reactions has-divider" data-bi-name="reactions" id="issue-327-reactions" hidden="">
+			
+		<button class="github-reaction" type="button" aria-label="1 thumbs up reactions" data-label-format="{0} thumbs up reactions" data-reaction-type="+1" data-reaction-owner="327" data-reaction-owner-type="issue" data-reaction-count="1" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 thumbs down reactions" data-label-format="{0} thumbs down reactions" data-reaction-type="-1" data-reaction-owner="327" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 laugh reactions" data-label-format="{0} laugh reactions" data-reaction-type="laugh" data-reaction-owner="327" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 hooray reactions" data-label-format="{0} hooray reactions" data-reaction-type="hooray" data-reaction-owner="327" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 confused reactions" data-label-format="{0} confused reactions" data-reaction-type="confused" data-reaction-owner="327" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 heart reactions" data-label-format="{0} heart reactions" data-reaction-type="heart" data-reaction-owner="327" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="heart">
+		</button>
+			<span class="hr"></span>
+		<div class="github-reactions-dropdown dropdown has-caret" auto-align="" data-bi-name="reactions-menu">
+			<button class="dropdown-trigger muted-link text-subtle" aria-label="Choose reaction" aria-haspopup="true" aria-controls="ax-3">
+				<span class="docon docon-octicon-plus-small" aria-hidden="true"></span>
+				<span class="docon docon-octicon-smiley" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown-menu" id="ax-3" role="menu" aria-label="Pick your reaction">
+				<a class="feedback-sign-in-button" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="feedback-reaction-sign-in">
+					<span class="icon"><span class="docon docon-brand-github" aria-hidden="true"></span></span>
+					<span>Sign in to add your reaction</span>
+				</a>
+				<div>
+					<span class="pick-reaction">Pick your reaction</span>
+					
+		<div class="github-reactions " data-bi-name="reactions">
+			
+		<button class="github-reaction" type="button" aria-label="+1" data-label-format="+1" data-reaction-type="+1" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="-1" data-label-format="-1" data-reaction-type="-1" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Laugh" data-label-format="Laugh" data-reaction-type="laugh" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Hooray" data-label-format="Hooray" data-reaction-type="hooray" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Confused" data-label-format="Confused" data-reaction-type="confused" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Heart" data-label-format="Heart" data-reaction-type="heart" data-reaction-owner="327" data-reaction-owner-type="issue" disabled="" data-bi-name="heart">
+		</button>
+			
+		</div>
+				</div>
+			</div>
+		</div>
+		</div>
+			</div>
+			<ul class="github-comments-list" id="issue-327-comments" aria-label="Comments" hidden=""></ul>
+		</article></li><li>
+		<article>
+			<div class="github-issue " data-github-user="edrickleong">
+				<h3 class="visually-hidden">Unclear how to setup a Xamarin UITest project</h3>
+				<div class="issue-title-container">
+					<a class="issue-title muted-link" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="issue-expander" role="button" aria-expanded="false" aria-controls="issue-270-body issue-270-comments issue-270-reactions issue-270-reactions-menu">
+						<span class="visually-hidden">Toggle issue&nbsp;</span>
+						<span class="expand-indicator text-subtle docon docon-chevron-right-light" aria-hidden="true"></span>
+						Unclear how to setup a Xamarin UITest project
+					</a>
+					<div class="title-aside">
+						
+		<div class="github-reactions-dropdown dropdown has-caret" auto-align="" data-bi-name="reactions-menu" id="issue-270-reactions-menu" hidden="">
+			<button class="dropdown-trigger muted-link text-subtle" aria-label="Choose reaction" aria-haspopup="true" aria-controls="ax-4">
+				<span class="docon docon-octicon-plus-small" aria-hidden="true"></span>
+				<span class="docon docon-octicon-smiley" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown-menu" id="ax-4" role="menu" aria-label="Pick your reaction">
+				<a class="feedback-sign-in-button" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="feedback-reaction-sign-in">
+					<span class="icon"><span class="docon docon-brand-github" aria-hidden="true"></span></span>
+					<span>Sign in to add your reaction</span>
+				</a>
+				<div>
+					<span class="pick-reaction">Pick your reaction</span>
+					
+		<div class="github-reactions " data-bi-name="reactions">
+			
+		<button class="github-reaction" type="button" aria-label="+1" data-label-format="+1" data-reaction-type="+1" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="-1" data-label-format="-1" data-reaction-type="-1" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Laugh" data-label-format="Laugh" data-reaction-type="laugh" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Hooray" data-label-format="Hooray" data-reaction-type="hooray" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Confused" data-label-format="Confused" data-reaction-type="confused" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Heart" data-label-format="Heart" data-reaction-type="heart" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="heart">
+		</button>
+			
+		</div>
+				</div>
+			</div>
+		</div>
+						<button class="comment-count muted-link text-subtle" data-issue="270" data-count="8" tabindex="-1" role="button" aria-label="Toggle issue">
+							<span class="docon docon-comment-outline" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+				<div class="issue-body github-content" id="issue-270-body" hidden="" data-bi-name="issue-body">
+					<p>It's unclear which NUnit packages and runners are required to run the Xamarin UITest locally</p>
+
+
+
+
+				</div>
+				<div class="issue-footer">
+					<div class="text-subtle">
+						<a class="issue-number" href="https://github.com/MicrosoftDocs/appcenter-docs/issues/270" data-bi-name="github-issue" title="View this issue on GitHub"><cite>#270</cite></a>
+						opened <time datetime="2018-09-21T02:06:35Z">on Sep 21, 2018</time> by <a class="issue-author" href="https://github.com/edrickleong" data-bi-name="github-issue-user" title="View edrickleong on GitHub">edrickleong</a>
+						
+					</div>
+				</div>
+				
+		<div class="github-reactions has-divider" data-bi-name="reactions" id="issue-270-reactions" hidden="">
+			
+		<button class="github-reaction" type="button" aria-label="0 thumbs up reactions" data-label-format="{0} thumbs up reactions" data-reaction-type="+1" data-reaction-owner="270" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 thumbs down reactions" data-label-format="{0} thumbs down reactions" data-reaction-type="-1" data-reaction-owner="270" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 laugh reactions" data-label-format="{0} laugh reactions" data-reaction-type="laugh" data-reaction-owner="270" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 hooray reactions" data-label-format="{0} hooray reactions" data-reaction-type="hooray" data-reaction-owner="270" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 confused reactions" data-label-format="{0} confused reactions" data-reaction-type="confused" data-reaction-owner="270" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 heart reactions" data-label-format="{0} heart reactions" data-reaction-type="heart" data-reaction-owner="270" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="heart">
+		</button>
+			<span class="hr"></span>
+		<div class="github-reactions-dropdown dropdown has-caret" auto-align="" data-bi-name="reactions-menu">
+			<button class="dropdown-trigger muted-link text-subtle" aria-label="Choose reaction" aria-haspopup="true" aria-controls="ax-5">
+				<span class="docon docon-octicon-plus-small" aria-hidden="true"></span>
+				<span class="docon docon-octicon-smiley" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown-menu" id="ax-5" role="menu" aria-label="Pick your reaction">
+				<a class="feedback-sign-in-button" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="feedback-reaction-sign-in">
+					<span class="icon"><span class="docon docon-brand-github" aria-hidden="true"></span></span>
+					<span>Sign in to add your reaction</span>
+				</a>
+				<div>
+					<span class="pick-reaction">Pick your reaction</span>
+					
+		<div class="github-reactions " data-bi-name="reactions">
+			
+		<button class="github-reaction" type="button" aria-label="+1" data-label-format="+1" data-reaction-type="+1" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="-1" data-label-format="-1" data-reaction-type="-1" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Laugh" data-label-format="Laugh" data-reaction-type="laugh" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Hooray" data-label-format="Hooray" data-reaction-type="hooray" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Confused" data-label-format="Confused" data-reaction-type="confused" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Heart" data-label-format="Heart" data-reaction-type="heart" data-reaction-owner="270" data-reaction-owner-type="issue" disabled="" data-bi-name="heart">
+		</button>
+			
+		</div>
+				</div>
+			</div>
+		</div>
+		</div>
+			</div>
+			<ul class="github-comments-list" id="issue-270-comments" aria-label="Comments" hidden=""></ul>
+		</article></li><li>
+		<article>
+			<div class="github-issue " data-github-user="bruno-garcia">
+				<h3 class="visually-hidden">Typo</h3>
+				<div class="issue-title-container">
+					<a class="issue-title muted-link" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="issue-expander" role="button" aria-expanded="false" aria-controls="issue-24-body issue-24-comments issue-24-reactions issue-24-reactions-menu">
+						<span class="visually-hidden">Toggle issue&nbsp;</span>
+						<span class="expand-indicator text-subtle docon docon-chevron-right-light" aria-hidden="true"></span>
+						Typo
+					</a>
+					<div class="title-aside">
+						
+		<div class="github-reactions-dropdown dropdown has-caret" auto-align="" data-bi-name="reactions-menu" id="issue-24-reactions-menu" hidden="">
+			<button class="dropdown-trigger muted-link text-subtle" aria-label="Choose reaction" aria-haspopup="true" aria-controls="ax-6">
+				<span class="docon docon-octicon-plus-small" aria-hidden="true"></span>
+				<span class="docon docon-octicon-smiley" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown-menu" id="ax-6" role="menu" aria-label="Pick your reaction">
+				<a class="feedback-sign-in-button" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="feedback-reaction-sign-in">
+					<span class="icon"><span class="docon docon-brand-github" aria-hidden="true"></span></span>
+					<span>Sign in to add your reaction</span>
+				</a>
+				<div>
+					<span class="pick-reaction">Pick your reaction</span>
+					
+		<div class="github-reactions " data-bi-name="reactions">
+			
+		<button class="github-reaction" type="button" aria-label="+1" data-label-format="+1" data-reaction-type="+1" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="-1" data-label-format="-1" data-reaction-type="-1" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Laugh" data-label-format="Laugh" data-reaction-type="laugh" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Hooray" data-label-format="Hooray" data-reaction-type="hooray" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Confused" data-label-format="Confused" data-reaction-type="confused" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Heart" data-label-format="Heart" data-reaction-type="heart" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="heart">
+		</button>
+			
+		</div>
+				</div>
+			</div>
+		</div>
+						<button class="comment-count muted-link text-subtle" data-issue="24" data-count="4" tabindex="-1" role="button" aria-label="Toggle issue">
+							<span class="docon docon-comment-outline" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+				<div class="issue-body github-content" id="issue-24-body" hidden="" data-bi-name="issue-body">
+					<p>"UITest will hat test execution" should be: "UITest will halt test execution"<br>
+Where to fork and fix?</p>
+
+
+
+
+				</div>
+				<div class="issue-footer">
+					<div class="text-subtle">
+						<a class="issue-number" href="https://github.com/MicrosoftDocs/appcenter-docs/issues/24" data-bi-name="github-issue" title="View this issue on GitHub"><cite>#24</cite></a>
+						opened <time datetime="2018-02-23T14:29:17Z">on Feb 23, 2018</time> by <a class="issue-author" href="https://github.com/bruno-garcia" data-bi-name="github-issue-user" title="View bruno-garcia on GitHub">bruno-garcia</a>
+						
+					</div>
+				</div>
+				
+		<div class="github-reactions has-divider" data-bi-name="reactions" id="issue-24-reactions" hidden="">
+			
+		<button class="github-reaction" type="button" aria-label="0 thumbs up reactions" data-label-format="{0} thumbs up reactions" data-reaction-type="+1" data-reaction-owner="24" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 thumbs down reactions" data-label-format="{0} thumbs down reactions" data-reaction-type="-1" data-reaction-owner="24" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 laugh reactions" data-label-format="{0} laugh reactions" data-reaction-type="laugh" data-reaction-owner="24" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 hooray reactions" data-label-format="{0} hooray reactions" data-reaction-type="hooray" data-reaction-owner="24" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 confused reactions" data-label-format="{0} confused reactions" data-reaction-type="confused" data-reaction-owner="24" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="0 heart reactions" data-label-format="{0} heart reactions" data-reaction-type="heart" data-reaction-owner="24" data-reaction-owner-type="issue" data-reaction-count="0" disabled="" data-bi-name="heart">
+		</button>
+			<span class="hr"></span>
+		<div class="github-reactions-dropdown dropdown has-caret" auto-align="" data-bi-name="reactions-menu">
+			<button class="dropdown-trigger muted-link text-subtle" aria-label="Choose reaction" aria-haspopup="true" aria-controls="ax-7">
+				<span class="docon docon-octicon-plus-small" aria-hidden="true"></span>
+				<span class="docon docon-octicon-smiley" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown-menu" id="ax-7" role="menu" aria-label="Pick your reaction">
+				<a class="feedback-sign-in-button" href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#" data-bi-name="feedback-reaction-sign-in">
+					<span class="icon"><span class="docon docon-brand-github" aria-hidden="true"></span></span>
+					<span>Sign in to add your reaction</span>
+				</a>
+				<div>
+					<span class="pick-reaction">Pick your reaction</span>
+					
+		<div class="github-reactions " data-bi-name="reactions">
+			
+		<button class="github-reaction" type="button" aria-label="+1" data-label-format="+1" data-reaction-type="+1" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="+1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="-1" data-label-format="-1" data-reaction-type="-1" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="-1">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Laugh" data-label-format="Laugh" data-reaction-type="laugh" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="laugh">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Hooray" data-label-format="Hooray" data-reaction-type="hooray" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="hooray">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Confused" data-label-format="Confused" data-reaction-type="confused" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="confused">
+		</button>
+		<button class="github-reaction" type="button" aria-label="Heart" data-label-format="Heart" data-reaction-type="heart" data-reaction-owner="24" data-reaction-owner-type="issue" disabled="" data-bi-name="heart">
+		</button>
+			
+		</div>
+				</div>
+			</div>
+		</div>
+		</div>
+			</div>
+			<ul class="github-comments-list" id="issue-24-comments" aria-label="Comments" hidden=""></ul>
+		</article></li></ul>
+		</section>
+	</div>
+	<div class="action-container">
+		<a class="view-on-github" href="https://github.com/MicrosoftDocs/appcenter-docs/issues?utf8=%E2%9C%93&amp;q=%224a79fc1d-8dca-1c17-718f-c30fda180f05%22&amp;in=body" data-bi-name="view-on-github">
+			<span class="docon docon-brand-github" aria-hidden="true"></span>
+			<span>View on GitHub</span>
+			<span class="docon docon-navigate-external" aria-hidden="true"></span>
+		</a>
+	</div>
+</section>
+						<!-- end feedback section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus ">
+<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">English (United States)</span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+					<div id="page-actions" class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" data-bi-name="pageactions" role="complementary" aria-label="Page Actions">
+							<nav id="side-doc-outline" class="doc-outline is-fixed is-vertically-scrollable" data-bi-name="intopic toc" role="navigation" aria-label="Article Outline" style="width: 123.07px; top: 24px; bottom: 24px;">
+								<h3>In this article</h3>
+							<ol><li class=""><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#introducing-the-xamarinuitest-api">Introducing the Xamarin.UITest API</a></li><li class=""><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#interacting-with-the-user-interface">Interacting with the User Interface</a></li><li class=""><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#using-the-repl">Using the REPL</a></li><li class="selected"><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#using-marked-to-locate-views">Using Marked To Locate Views</a></li><li class=""><a href="https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/#controlling-the-application-with-xamarinuitestiapp">Controlling the Application with Xamarin.UITest.IApp</a></li></ol></nav>
+					</div>
+
+					<!--end of div.columns -->
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive ">
+<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">English (United States)</span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>
+	</div>
+
+	<div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus" tabindex="-1"></div>
+
+
+</body></html>
